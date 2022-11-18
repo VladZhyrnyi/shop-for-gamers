@@ -1,0 +1,82 @@
+<section class="order">
+  <div class="container">
+    <h2>Take order</h2>
+    <div class="product">
+      <div class="product__container">
+        <img src="" alt="photo of Xiberia K9 PRO PC Headset" />
+      </div>
+      <h3 class="product__title">Xiberia K9 PRO PC Headset</h3>
+      <ul class="price">
+        <li class="price--first-price">65.14<span>USD</span></li>
+        <li class="price--second-price">55.14<span>USD</span></li>
+      </ul>
+      <ul class="product__img">
+        <li class="product__img-item"></li>
+        <li class="product__img-item"></li>
+        <li class="product__img-item"></li>
+        <li class="product__img-item"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="order-contact-form">
+  <h2>Contact us</h2>
+  <form action="" name="order__form" autocomplete="on" novalidate>
+    <div>
+      <div class="order__form-field">
+        <label>
+          Name
+          <input type="text" name="order__username" autofocus />
+        </label>
+      </div>
+      <div class="order__form-field">
+        <label>
+          Email
+          <input type="email" name="order__email" />
+        </label>
+      </div>
+      <div class="order__form-field">
+        <label for="order__color">Color Option</label>
+        <select id="order__color" name="order__color">
+          <option value="k9d-black-orange">K9D Black Orange</option>
+          <option value="k9d-silver-gray">K9D Silver Gray</option>
+          <option value="k9u-white-blue" selected>K9U White Blue</option>
+        </select>
+      </div>
+
+      <div class="order__form-field">
+        <!-- <label>
+                Quantity
+                <input type="number" name="order__quantity" min="0" />
+              </label> -->
+        <label for="order__quantity">Quantity</label>
+        <select id="order__quantity" name="order__quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+        </select>
+      </div>
+
+      <div class="order__form-field">
+        <label for="order__payment">Payment</label>
+        <select id="order__payment" name="order__payment">
+          <option value="privat24">Privat24</option>
+          <option value="monobank">Monobank</option>
+          <option value="paypal" selected>PayPal</option>
+        </select>
+      </div>
+    </div>
+    <label>
+      Leave your message
+      <textarea
+        class="order__user-comment"
+        name="order__user-comment"
+        rows="5"
+        placeholder=""
+      ></textarea>
+    </label>
+
+    <button class="order__button--buy-now" type="submit">Buy it now</button>
+    <button class="order__button--cart" type="submit">Add to cart</button>
+  </form>
+</section>
