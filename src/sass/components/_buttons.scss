@@ -1,0 +1,86 @@
+%btn {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  text-transform: uppercase;
+  text-align: center;
+
+  height: 70px;
+  min-width: 306px;
+  padding: 16px 20px;
+
+  @include flex-position();
+  display: inline-flex;
+
+  border: 1px;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+
+  color: getColor('BackgroundColor');
+  background-color: getColor('SecondaryTitleColor');
+  border-color: transparent;
+
+  &--small {
+    font-size: 14px;
+    line-height: 1;
+
+    height: 46px;
+    min-width: 102px;
+  }
+
+  &--white {
+    font-size: 28px;
+    line-height: 33px;
+
+    height: 65px;
+    min-width: 195px;
+
+    background-color: getColor('PrimaryTitleColor');
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+        0px 4px 10px rgba(134, 229, 67, 0.1);
+    }
+  }
+}
+
+.btn-secondary {
+  @extend %btn;
+
+  color: getColor('SecondaryTitleColor');
+  background-color: transparent;
+  border-color: getColor('SecondaryTitleColor');
+
+  &--medium {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+
+    height: 51px;
+    min-width: 168px;
+  }
+
+  &--white {
+    color: getColor('PrimaryTitleColor');
+    border-color: getColor('PrimaryTitleColor');
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+        0px 4px 10px rgba(134, 229, 67, 0.1);
+    }
+  }
+}
