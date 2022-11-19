@@ -1,11 +1,12 @@
 .blog {
+  margin: 0 auto;
   background-color: #01383a;
   background-image: url(../images/blog/background-mob.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 
-  max-width: 320px;
+  // max-width: 320px;
 //   min-height: 4096px;
 
   @media (min-device-pixel-ratio: 2),
@@ -62,7 +63,7 @@
   padding-bottom: 48px;
 }
 
-.blog__titel {
+.blog__title {
   //   margin-top: 40px;
   //   padding-top: 40px;
   //   margin-left: 16px;
@@ -95,7 +96,7 @@
   }
 }
 
-.article__titel {
+.article__title {
 //   padding-left: 16px;
 //   padding-right: 16px;
 
