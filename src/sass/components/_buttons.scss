@@ -1,0 +1,187 @@
+
+
+.btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: var(BackgroundColor);
+    background-color: var(SecondaryTitleColor);
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn--prymery {
+
+    font-size: 16px;
+    line-height: 1.19;
+    border-radius: 16px;
+    padding: 16px 42px;
+    min-width: 173px;
+    height: 51px;
+    
+    @mixin tablet {
+            width: 306px;
+            height: 70px;
+            font-size: 32px;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+            
+        }
+    
+}
+
+.btn--prymery-header {
+
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: -0.03em;
+    color: var(TextBlackColor);
+    padding: 9px 18px;
+    width: 95px;
+    height: 40px;
+    
+
+    @mixin desktop {
+        min-width: 102px;
+        height: 46px;
+        padding: 16px 20px;
+    }
+
+}
+
+.btn--prymery-transparent-green{
+    border: 1px solid var(SecondaryTitleColor);
+    color: var(SecondaryTitleColor);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+     }
+
+         @mixin tablet {
+             width: 306px;
+             height: 51px;
+             font-size: 32px;
+         }
+}
+
+.btn--prymery-transparent-white {
+    border: 1px solid var(PrimaryTitleColor);
+    color: var(PrimaryTitleColor);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+    }
+
+        @mixin tablet {
+            width: 306px;
+            height: 51px;
+            font-size: 32px;
+        }
+}
+
+.btn--white{
+    
+    font-size: 16px;
+    line-height: 1.19;
+    padding: 16px 48px;
+    width: 153px;
+    height: 51px;
+    background-color: var(PrimaryTitleColor);
+
+    @mixin tablet {
+            width: 195px;
+            height: 65px;
+            font-size: 28px;
+            line-height: 1.18;
+        }
+    
+        &:hover,
+        &:focus {
+            box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
+    
+        }
+}
+
+.btn--filter{
+    
+    font-size: 16px;
+    line-height: 1.19px;
+    background-color: transparent;
+    padding: 8px 16px;
+    width: 124px;
+    height: 35px;
+    border: 1px solid var(SecondaryTitleColor);
+
+    @mixin tablet {
+            width: 132px;
+            height: 51px; 
+            padding: 16px 28px;
+        }
+
+    @mixin desktop{
+            width: 168px;
+            padding: 16px 48px;
+        
+        }
+    
+        &:hover,
+        &:focus {
+            filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+    
+        }
+
+        &:active{
+            border: none;
+            color: var(BackgroundColor);
+            background-color: var(SecondaryTitleColor);
+            box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+        }
+    
+}
+
+
+
+ .btn--ok {
+    font-size: 32px;
+    line-height: 1.19;
+    padding: 16px;
+    fill: var(BackgroundColor);
+    width: 171px;
+    height: 80px;
+
+    &:active {
+        box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+        }
+ }
+
+ .btn--nok{
+
+    font-size: 32px;
+        line-height: 1.19;
+        padding: 16px;
+        fill: var(SecondaryTitleColor);
+        color: var(SecondaryTitleColor);
+        background-color: transparent;
+        border: 1px solid var(SecondaryTitleColor);
+        width: 171px;
+        height: 80px;
+
+    &:active {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+        }
+
+ }
