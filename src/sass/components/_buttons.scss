@@ -11,11 +11,13 @@
     justify-content: center;
     align-items: center;
 
-    color: var(BackgroundColor);
-    background-color: var(SecondaryTitleColor);
+    color: getColor('BackgroundColor');
+    background-color: getColor('SecondaryTitleColor');
     border-radius: 16px;
     border: none;
     cursor: pointer;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn--prymery {
 
@@ -25,6 +27,8 @@
     padding: 16px 42px;
     min-width: 173px;
     height: 51px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     @mixin tablet {
             width: 306px;
@@ -45,7 +49,7 @@
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: -0.03em;
-    color: var(TextBlackColor);
+    color: getColor('TextBlackColor');
     padding: 9px 18px;
     width: 95px;
     height: 40px;
@@ -60,9 +64,11 @@
 }
 
 .btn--prymery-transparent-green{
-    border: 1px solid var(SecondaryTitleColor);
-    color: var(SecondaryTitleColor);
+    border: 1px solid getColor('SecondaryTitleColor');
+    color: getColor('SecondaryTitleColor');
     background-color: transparent;
+
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -77,9 +83,11 @@
 }
 
 .btn--prymery-transparent-white {
-    border: 1px solid var(PrimaryTitleColor);
-    color: var(PrimaryTitleColor);
+    border: 1px solid getColor('PrimaryTitleColor');
+    color: getColor('PrimaryTitleColor');
     background-color: transparent;
+
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -100,7 +108,11 @@
     padding: 16px 48px;
     width: 153px;
     height: 51px;
-    background-color: var(PrimaryTitleColor);
+    background-color: getColor('PrimaryTitleColor');
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 
     @mixin tablet {
             width: 195px;
@@ -124,7 +136,13 @@
     padding: 8px 16px;
     width: 124px;
     height: 35px;
-    border: 1px solid var(SecondaryTitleColor);
+    border: 1px solid getColor('SecondaryTitleColor');
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @mixin tablet {
             width: 132px;
@@ -146,8 +164,8 @@
 
         &:active{
             border: none;
-            color: var(BackgroundColor);
-            background-color: var(SecondaryTitleColor);
+            color: getColor('BackgroundColor');
+            background-color: getColor('SecondaryTitleColor');
             box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
         }
     
@@ -155,33 +173,4 @@
 
 
 
- .btn--ok {
-    font-size: 32px;
-    line-height: 1.19;
-    padding: 16px;
-    fill: var(BackgroundColor);
-    width: 171px;
-    height: 80px;
-
-    &:active {
-        box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
-        }
- }
-
- .btn--nok{
-
-    font-size: 32px;
-        line-height: 1.19;
-        padding: 16px;
-        fill: var(SecondaryTitleColor);
-        color: var(SecondaryTitleColor);
-        background-color: transparent;
-        border: 1px solid var(SecondaryTitleColor);
-        width: 171px;
-        height: 80px;
-
-    &:active {
-    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
-        }
-
- }
+ 
