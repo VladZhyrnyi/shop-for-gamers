@@ -1,0 +1,26 @@
+.accessories {
+}
+
+.accessorTitle__text {
+  @include font(600, 24px, 28px);
+  color: #ffffff;
+
+  @include tablet {
+    @include font(600, 56px, 66px);
+  }
+}
+
+.accessor__subtitle {
+  @include font(600, 22px, 26px);
+  color: #86e543;
+}
+
+.accessor__fullPrise {
+  @include font(600, 14px, 14px);
+  color: #8d9289;
+  text-decoration: line-through;
+}
+.accessor__lowPrice {
+  @include font(600, 20px, 20px);
+  color: #86e543;
+}
