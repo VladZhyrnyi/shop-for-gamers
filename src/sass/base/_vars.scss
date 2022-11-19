@@ -1,0 +1,16 @@
+$colors: (
+  'PrimaryTitleColor': #ffffff,
+  'SecondaryTitleColor': #86e543,
+
+  'BackgroundColor': #01383a,
+  'FooterBackgroundColor': #001414,
+
+  'TextGreyColor': #8d9289,
+  'TextBlackColor': #000000,
+);
+
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
