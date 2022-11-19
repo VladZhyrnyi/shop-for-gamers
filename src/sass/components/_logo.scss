@@ -1,0 +1,7 @@
+.logo {
+  @include font(700);
+  width: 116px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
