@@ -1,0 +1,99 @@
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  max-width: 272px;
+  padding: 100px 30px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 3px;
+  background-color: getColor('BackgroundColor');
+  transition: 0.3s all;
+
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    padding: 88px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__cross {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #86E543;
+  cursor: pointer;
+
+  @media screen and (min-width:768px) {
+   width: 32px;
+   height: 32px;
+  }
+}
+
+.modal__text {
+  display: block;
+  max-width: 230;
+  margin: auto;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-align: center;
+  color: getColor('PrimaryTitleColor');
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+
+    font-size: 56px;
+    line-height: calc(66 / 56);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+    line-height: calc(75 / 64);
+  }
+}
+
+.modal__btn {
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 56px;
+  }
+}
