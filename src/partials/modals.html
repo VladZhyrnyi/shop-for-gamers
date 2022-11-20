@@ -1,10 +1,10 @@
 <!-- Элементы для вызова модальных окон, могут быть любые -->
 
-<a href="#" class="js-open-modal" data-modal="take-order1">take order 1</a>
+<!-- <a href="#" class="js-open-modal" data-modal="take-order1">take order 1</a>
 
 <a href="#" class="js-open-modal" data-modal="take-order2">take order 2</a>
 
-<a href="#" class="js-open-modal" data-modal="contact">contact</a>
+<a href="#" class="js-open-modal" data-modal="contact">contact</a> -->
 
 <!-- Несколько модальных окон -->
 
@@ -14,7 +14,7 @@
       <use href="./images/icons.svg#icon-circle-cross"></use>
    </svg>
    <p class="modal__text">Excellent choice! Let's move on to the checkout!</p>
-   <button type="submit" class="btn-primary modal__btn">let's go!</button>
+   <button type="submit" class="btn-primary modal__btn js-modal-close">let's go!</button>
 </div>
 
 <div class="modal" data-modal="take-order2">
@@ -25,7 +25,7 @@
    <p class="modal__text">
       Thank you for your order! We will contact you soon!
    </p>
-   <button type="button" class="btn-primary modal__btn">keep shopping</button>
+   <button type="submit" class="btn-primary modal__btn js-modal-close">keep shopping</button>
 </div>
 
 <div class="modal" data-modal="contact">
@@ -36,7 +36,7 @@
    <p class="modal__text">
       Thank you for your message! We will contact you soon!
    </p>
-   <button type="button" class="btn-primary modal__btn">ok</button>
+   <button type="submit" class="btn-primary modal__btn js-modal-close">ok</button>
 </div>
 
 <!-- Подложка под модальным окном -->
