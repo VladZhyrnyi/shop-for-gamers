@@ -1,122 +1,99 @@
 /* Стили для подложки */
 
 .overlay {
-   
-    /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
-    transition: .3s all;
- }
- 
- 
- /* Стили для модальных окон */
- 
- .modal {
-    
-    /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
-    
-    
-    /*  Установаем ширину окна  */
-    width: 100%;
-    max-width: 500px;
-    
-    /*  Центрируем и задаем z-index */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30; /* Должен быть выше чем у подложки*/
-    
-    /*  Побочные стили   */
-    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
-    text-align: center;
-    padding: 30px;
-    border-radius: 3px;
-    background-color: #fff;
-    transition: 0.3s all;
- }
- 
- 
- /* Стили для активных классов подложки и окна */
- 
- .modal.active,
- .overlay.active{
-    opacity: 1;
-    visibility: visible;
- }
- 
- 
- /* Стили для кнопки закрытия */
- 
- .modal__cross {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    fill: #444;
-    cursor: pointer;
- }
- .modal__title{
-font-weight: 600;
-font-size: 24px;
-line-height: 1.16;
-text-align: center;
-color: #FFFFFF;
-max-width: 214px;
-@media screen and (min-width:768px){
-    font-size: 56px;
-    line-height: 1.17;
-    max-width: 608px;  
-}
-@media screen and (min-width:1200px){
-    font-size: 64px;
-    max-width: 638px; 
-}
- }
- 
- /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
- .modal_btn{
-padding-top: 16px;
-padding-bottom: 16px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.19;
-text-align: right;
-text-transform: uppercase;   
-color: #01383A;
-min-width: 173px;
-height: 51px;
-background: #86E543;
-border-radius: 16px;
-@media screen and (min-width:768px) {
-min-width: 306px;
-height: 70px;
-font-size: 32px;
-}
-@media screen and (min-width:1200px) {
-    min-width: 306px;
-    height: 70px;
-    font-size: 32px;
-    }
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
 
- }
- a {
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #414b52;
-    margin: 10px;
-    color: #fff;
-    border-radius: 3px;
- }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  max-width: 272px;
+  padding: 100px 30px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 3px;
+  background-color: getColor('BackgroundColor');
+  transition: 0.3s all;
+
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    padding: 88px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__cross {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #86E543;
+  cursor: pointer;
+
+  @media screen and (min-width:768px) {
+   width: 32px;
+   height: 32px;
+  }
+}
+
+.modal__text {
+  display: block;
+  max-width: 230;
+  margin: auto;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-align: center;
+  color: getColor('PrimaryTitleColor');
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+
+    font-size: 56px;
+    line-height: calc(66 / 56);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+    line-height: calc(75 / 64);
+  }
+}
+
+.modal__btn {
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 56px;
+  }
+}
