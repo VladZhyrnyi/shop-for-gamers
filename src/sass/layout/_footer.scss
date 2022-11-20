@@ -12,11 +12,11 @@ footer {
 	}
 }
 .footer-page__logo {
-	@include font (700);
-	width: 116px;
-	color: colors('PrimaryTitleColor');
-	text-transform: uppercase;
-	text-align: center;
+	// @include font (700);
+	// width: 116px;
+	// color: colors('PrimaryTitleColor');
+	// text-transform: uppercase;
+	// text-align: center;
 	@include tablet {
 		margin-right: 61px;
 	}
