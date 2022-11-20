@@ -1,7 +1,7 @@
-footer {
+.footer-page {
 	background-color: #001414;
 }
-.footer-page {
+.footer-page__container {
 	padding: 25px 32px 24px 16px;
 
 	@include tablet {
@@ -17,6 +17,7 @@ footer {
 	// color: colors('PrimaryTitleColor');
 	// text-transform: uppercase;
 	// text-align: center;
+	display: block;
 	@include tablet {
 		margin-right: 61px;
 	}
@@ -44,7 +45,7 @@ footer {
 		margin-right: 281px;
 	}
 }
-.footer-page__naviation {
+.footer-page__navigation {
 }
 
 .footer-page__list {}
@@ -115,7 +116,7 @@ footer {
 	letter-spacing: 0.01em;
 	color: #8D9289;
 }
-.contact-phpne {
+.contact-phone {
 	li:not(:last-child) {
 			margin-bottom: 8px;
 		}
