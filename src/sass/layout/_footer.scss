@@ -1,0 +1,123 @@
+.footer-page {
+	background-color: #001414;
+}
+.footer-page__container {
+	padding: 25px 32px 24px 16px;
+
+	@include tablet {
+		display: flex;
+		margin: 0 auto;
+		align-items: flex-start;
+		justify-content: center;
+	}
+}
+.footer-page__logo {
+	// @include font (700);
+	// width: 116px;
+	// color: colors('PrimaryTitleColor');
+	// text-transform: uppercase;
+	// text-align: center;
+	display: block;
+	@include tablet {
+		margin-right: 61px;
+	}
+	@include desktop {
+		margin-right: 118px;
+	}
+	
+}
+.footer-page__group {
+	display: flex;
+	justify-content: space-between;
+	@media screen and (min-width:320px) {
+		gap: 160px;
+	}
+	@media screen and (max-width:767px) {
+	margin-bottom: 25px;
+	margin-top: 25px;
+	}
+	@include tablet {
+		gap: 89px;
+		margin-right: 73px;
+	}
+	@include desktop {
+		gap: 217px;
+		margin-right: 281px;
+	}
+}
+.footer-page__navigation {
+}
+
+.footer-page__list {}
+
+.footer-page__item {
+	&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+}
+
+.footer-page__nav-link {
+	@include font(400, 16px, 16px);
+	color: #FFFFFF;
+}
+
+.footer-page__social-links {
+	@media screen and (max-width:767px) {
+		margin-bottom: 24px;
+	}
+}
+
+.footer-page__social-links-list {
+	@include tablet {
+			display: flex;
+			gap: 16px;
+		}
+	@include desktop {
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+.footer-page__social-item {
+	@media screen and (max-width:767px) {
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+	}
+}
+
+.social-link {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-page__contact {}
+
+.contact-mail {
+	margin-bottom: 16px;
+
+	.contact-mail__item:not(:last-child) {
+			margin-bottom: 8px;
+		}
+}
+.footer-page__title {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.18;
+	color: #FFFFFF;
+}
+.footer-page__contact-link {
+	@include font(null, 16px, 18px);
+	letter-spacing: 0.01em;
+	color: #8D9289;
+}
+.contact-phone {
+	li:not(:last-child) {
+			margin-bottom: 8px;
+		}
+}
