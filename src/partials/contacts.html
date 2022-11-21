@@ -1,0 +1,122 @@
+<section class="contact">
+  <div class="container contact__container">
+    <div class="content-wraper contact-wraper__text">
+      <h2 class="contact-title">Contacts</h2>
+    </div>
+    <div class="contact-picture">
+      <picture>
+        <source
+          srcset="
+            ./images/contacts/contact-bg-desk.jpg    1x,
+            ./images/contacts/contact-bg-desk-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/contacts/contact-bg-tablet.jpg    1x,
+            ./images/contacts/contact-bg-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/contacts/contact-bg-tel.jpg    1x,
+            ./images/contacts/contact-bg-tel-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="./images/contacts/contact-bg.jpg" alt="keyboard" />
+      </picture>
+    </div>
+    <div class="content-wraper">
+      <div class="contact-connect">
+        <div class="contact-text">
+          <p class="contact-text__case">
+            In case of queries about order handling and/or delay, drop us an
+            email at
+          </p>
+          <p class="contact-text__email">info@shopforgamers.com</p>
+        </div>
+        <div class="contact-connect__communication">
+          <ul class="contact-connect__list">
+            <div class="connect-list__mail">
+              <li class="contact-connect__item">
+                <p class="contact-connect__text">Email</p>
+                <a
+                  class="contact-connect__mail"
+                  href="mailto:sfg.info@gmail.com"
+                  >sfg.info@gmail.com</a
+                >
+              </li>
+            </div>
+            <div class="connect-list__tel">
+              <li class="contact-connect__item">
+                <p class="contact-connect__text">Phone number</p>
+                <div class="two-number">
+                  <div class="first-number">
+                    <a class="contact-connect__tel" href="tel:+380936432288"
+                      >+38 (093) 643 22 88</a
+                    >
+                  </div>
+                  <div class="second-number">
+                    <a class="contact-connect__tel" href="tel:+380503454423"
+                      >+38 (050) 345 44 23</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2 class="contact-form__title">CONTACT US</h2>
+        <div class="contact-form__input">
+          <form class="contact-field">
+            <div class="input-contact">
+              <div class="contact-label">
+                <label class="input-field">
+                  <input
+                    type="user"
+                    name="user"
+                    class="input-field__input"
+                    placeholder=" "
+                  />
+                  <span class="input-field__label">Name</span>
+                </label>
+              </div>
+              <div class="contact-input">
+                <label class="input-field">
+                  <input
+                    type="email"
+                    name="mail"
+                    class="input-field__input"
+                    placeholder=" "
+                  />
+                  <span class="input-field__label">Email</span>
+                </label>
+              </div>
+            </div>
+            <div class="contact-textarea">
+              <label for="comment" class="contact-textarea__text"
+                >Leave your message</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                class="contact-textarea__field"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn-secondary btn-secondary--white contact-field__btn"
+            >
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,272 @@
+$contact-color: #8d9289;
+$contact-us: #86e543;
+$textarea: #cdcdcd;
+$bg-color: #004225;
+
+.contact {
+  background-image: url(../images/сontacts/line-first-tel.svg),
+    url(../images/сontacts/line-second-tel.svg),
+    url(../images/сontacts/bg-tel-1x.jpg);
+  background-color: $bg-color;
+  padding-top: 40px;
+  padding-bottom: 48px;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: 43px, 47px, 0;
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../images/сontacts/line-first-tablet.svg),
+      url(../images/сontacts/line-second-tablet.svg),
+      url(../images/сontacts/bg-tablet.jpg);
+      background-position-y: 157px, 164px, 0;
+  }
+
+  @include desktop {
+    background-image: url(../images/сontacts/line-first-desk.svg),
+      url(../images/сontacts/line-second-desk.svg),
+        url(../images/сontacts/bg-desk.jpg);
+  }
+}
+
+.contact-title {
+  @include font(600, 24px, 28px);
+  color: getColor('PrimaryTitleColor');
+  font-style: normal;
+  margin-bottom: 35px;
+
+  @include tablet {
+    @include font(600, 56px, 66px);
+    margin-bottom: 67px;
+  }
+  @include desktop {
+    margin-bottom: 75px;
+  }
+}
+
+.contact-picture {
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    margin-bottom: 59px;
+  }
+}
+
+.contact-text {
+  @include font(400, 16px, 19px);
+  font-style: normal;
+  color: getColor('PrimaryTitleColor');
+  margin-bottom: 24px;
+  max-width: 288px;
+
+  @include tablet {
+    @include font(400, 24px, 28px);
+    margin-bottom: 32px;
+    max-width: 484px;
+  }
+}
+
+.contact-text__case {
+  margin-bottom: 18px;
+
+  @include tablet {
+    margin-bottom: 28px;
+    word-break: break-all;
+  }
+}
+
+.contact-connect__communication {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.connect-list__mail {
+  margin-bottom: 24px;
+}
+
+.first-number {
+  margin-bottom: 8px;
+}
+
+.contact-connect {
+  @include desktop {
+    width: 488px;
+  }
+}
+
+.contact-connect__text {
+  @include font(400, 16px, 19px);
+  font-style: normal;
+  color: getColor('PrimaryTitleColor');
+  margin-bottom: 8px;
+
+  @include tablet {
+    @include font(400, 24px, 28px);
+  }
+}
+
+.contact-connect__list {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.connect-list__mail {
+  @include tablet {
+    margin-right: 32px;
+  }
+}
+
+.contact-connect__mail,
+.contact-connect__tel {
+  @include font(400, 16px, 19px);
+  font-style: normal;
+  color: $contact-color;
+
+  @include tablet {
+    @include font(400, 24px, 28px);
+  }
+}
+
+.contact-form__title {
+  @include font(600, 24px, 28px);
+  font-style: normal;
+  color: $contact-us;
+  margin-bottom: 16px;
+
+  @include tablet {
+    @include font(600, 36px, 42px);
+    margin-bottom: 48px;
+  }
+}
+
+.contact-form {
+  @include tablet {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include desktop {
+    width: 590px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.input-contact {
+  margin-bottom: 40px;
+}
+
+.contact-label {
+  margin-bottom: 40px;
+}
+
+.contact__container {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.content-wraper {
+  @media screen and (max-width: 767px) {
+    padding: 0 16px;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 123px;
+  }
+}
+
+.contact-wraper__text {
+  @include tablet {
+    padding-left: 59px;
+  }
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field__label {
+  @include font(400, 16px, 20px);
+  font-style: normal;
+  position: absolute;
+  left: 0;
+  bottom: -1;
+  color: getColor('PrimaryTitleColor');
+  transform: translateY(0);
+
+  .input-field__input:hover + &,
+  .input-field__input:focus + &,
+  .input-field__input:not(:placeholder-shown) + & {
+    transform: translateY(-20px);
+  }
+
+  @include tablet {
+    @include font(400, 18px, 20px);
+  }
+}
+
+.input-field__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #86e543;
+  min-width: 288px;
+  color: getColor('PrimaryTitleColor');
+  outline: none;
+
+  @include tablet {
+    min-width: 590px;
+  }
+}
+
+.contact-textarea {
+  margin-bottom: 24px;
+}
+
+.contact-textarea__text {
+  @include font(400, 16px, 20px);
+  font-style: normal;
+  color: $textarea;
+  margin-bottom: 4px;
+
+  @include tablet {
+    @include font(400, 18px, 20px);
+  }
+}
+
+.contact-textarea__field {
+  resize: none;
+  background-color: transparent;
+  border-color: $contact-us;
+  color: getColor('PrimaryTitleColor');
+  min-width: 288px;
+  min-height: 95px;
+  outline: none;
+
+  @include tablet {
+    min-width: 590px;
+    min-height: 120px;
+  }
+}
+
+.contact-field__btn {
+    display: flex;
+    margin: 0 auto;
+    @include desktop {
+        margin: 0;
+    }
+}
