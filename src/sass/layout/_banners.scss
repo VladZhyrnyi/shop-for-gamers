@@ -1,0 +1,44 @@
+.banners__container {
+  padding: 0;
+}
+
+.banner-image__wrapper {
+  position: relative;
+  //   height: 503px;
+  //   width: 1280px;
+  //   overflow: hidden;
+}
+
+.banner-image__text {
+  display: none;
+  position: absolute;
+
+  font-weight: 500;
+  font-size: 56px;
+  line-height: calc(66 / 56);
+
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  background-clip: text;
+  color: transparent;
+
+  @include desktop {
+    display: block;
+  }
+
+  &--first {
+    max-width: 590px;
+    left: 345px;
+    bottom: 49px;
+  }
+
+  &--second {
+    max-width: 596px;
+    left: 49px;
+    bottom: 49px;
+  }
+}
