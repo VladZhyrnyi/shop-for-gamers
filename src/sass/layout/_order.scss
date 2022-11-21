@@ -7,6 +7,12 @@
 .product__container {
 }
 .product__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.18;
+  color: getColor('PrimaryTitleColor');
 }
 .price {
 }
