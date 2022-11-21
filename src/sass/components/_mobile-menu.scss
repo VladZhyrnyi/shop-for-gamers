@@ -1,0 +1,39 @@
+// .menu {
+//   @media screen and (max-width: 1279px) {
+//     position: absolute;
+//     top: 100%;
+//     height: 100%;
+//     left: 0;
+//     right: 0;
+//   }
+
+//   transform: translateX(-100%);
+
+//   font-size: 24px;
+//   line-height: calc(28 / 24);
+
+//   background-color: teal;
+
+//   transition: transform 250ms ease;
+
+//   &.is-open {
+//     transform: translateX(0);
+//   }
+// }
+
+// .menu__list {
+//   margin-top: 120px;
+//   display: flex;
+//   flex-direction: column;
+//   @include flex-position();
+//   gap: 40px;
+// }
+
+// .menu__item {
+//   text-align: center;
+// }
+
+// .menu__link {
+//   margin: auto;
+//   text-align: center;
+// }
