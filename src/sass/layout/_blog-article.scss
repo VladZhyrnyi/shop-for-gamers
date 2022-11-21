@@ -35,19 +35,21 @@ margin-bottom: 31px;
 }
 }
 
-.desktop-box {
+.blog-article__desktop-box {
+    margin-bottom: 24px;
     @include desktop() {
         display: flex;
         margin-bottom: 48px;
     }
 }
 
-// .blog-article__box {
-//     @include tablet() {
-//         display: flex;
-        // align-items: flex-end;
-        // margin-bottom: 16px;
-// }
+.blog-article__box {
+    @include tablet() {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 16px;
+}
+}
 // @include desktop() {
 //     align-items: flex-start;
 // }
@@ -74,18 +76,19 @@ margin-bottom: 31px;
 
 .blog-article__desktop-top-text {
     @include desktop() {
+        position: absolute;
+        top: 360px;
+        left: 548px;
+
         display: flex;
         margin-bottom: 24px;
-        position: absolute;
-        top: 230px;
     }
 }
 
-.primary-text-top {
+.blog-article__primary-text-top {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    // margin-bottom: 24px;
     @include desktop() {
         width: 690px;
        
@@ -142,19 +145,16 @@ width: 261px;
     @include tablet() {
     width: 655px;
     }
-    
 }
-
-
 
 .blog-article__bottom-text--numbered-list {
 padding-left:25px;
 margin-bottom: 24px;
 @include tablet() {
     padding-left: 33px;
-}
-li {
-    color: getColor('SecondaryTitleColor'); 
+    li {
+        color: getColor('SecondaryTitleColor'); 
+    }
 }
 }
 
@@ -167,5 +167,7 @@ color: getColor('PrimaryTitleColor');
 }
 
 .blog-article__bottom-text--green {
-    color: getColor('SecondaryTitleColor');
+    @include tablet() {
+        color: getColor('SecondaryTitleColor');
+    }
 }
