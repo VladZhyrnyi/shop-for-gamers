@@ -1,4 +1,77 @@
-// .menu {
+.dropdown-menu {
+  @media screen and (max-width: 1279px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  padding-top: 104px;
+  transform: translateX(-100%);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+
+  background-color: getColor('TextBlackColor');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/mobile-menu/menu-bcg-phone.jpg');
+  @include retina {
+    background-image: url('../images/mobile-menu/menu-bcg-phone-2x.jpg');
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('../images/mobile-menu/menu-bcg-phone-3x.jpg');
+  }
+
+  transition: transform 250ms ease;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @include tablet {
+    padding-top: 136px;
+
+    background-image: url('../images/mobile-menu/menu-bcg-tab.jpg');
+    @include retina {
+      background-image: url('../images/mobile-menu/menu-bcg-tab-2x.jpg');
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/mobile-menu/menu-bcg-tab-3x.jpg');
+    }
+  }
+}
+
+.dropdown-menu__list {
+  flex-direction: column;
+  @include flex-position();
+  gap: 40px;
+  padding-top: 64px;
+
+  @include tablet {
+    padding-top: 120px;
+  }
+}
+
+.dropdown-menu__link {
+  margin: auto;
+
+  text-transform: uppercase;
+  color: getColor('PrimaryTitleColor');
+
+  @include tablet {
+    @include font(700, 32px, 38px);
+  }
+}
+
+//  .menu {
 //   @media screen and (max-width: 1279px) {
 //     position: absolute;
 //     top: 100%;
