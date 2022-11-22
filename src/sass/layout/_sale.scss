@@ -1,5 +1,5 @@
 .sale {
-  padding-bottom: 47px;
+  padding: 48px 0;
   background-image: url('../images/sale/top-mobail.svg'),
     url('../images/sale/bottom-mobail.svg'), url('../images/sale/bg-mob.jpg');
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
     background-image: url('../images/sale/bg-mob-3x.jpg');
   }
   @media screen and (min-width: 768px) {
-    padding: 0 80px 120px 80px;
+    padding: 120px 80px;
     max-width: 768px;
     background-image: url('../images/sale/top-tablet.svg'),
     url('../images/sale/bottom-tablet.svg'), url('../images/sale/bg-tab.jpg');
@@ -55,7 +55,7 @@
     background-position-y: 46px, 54px, -190px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 0 40px 120px 40px;
+    padding: 120px 40px;
     max-width: 1280px;
     background-image: url('../images/sale/top.svg'),
     url('../images/sale/bottom.svg'), url('../images/sale/bg.jpg');
