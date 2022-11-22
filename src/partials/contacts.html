@@ -1,0 +1,65 @@
+<section class="contact-section">
+  <div class="container contact-section__container">
+    <div class="contact-section__content-wrapper">
+      <h2 class="contact-section__title">Contacts</h2>
+    </div>
+    <picture class="contact-section__picture">
+      <source srcset="
+            ./images/contacts/contact-bg-desk.jpg    1x,
+            ./images/contacts/contact-bg-desk-2x.jpg 2x
+          " media="(min-width: 1280px)" />
+      <source srcset="
+            ./images/contacts/contact-bg-tablet.jpg    1x,
+            ./images/contacts/contact-bg-tablet-2x.jpg 2x
+          " media="(min-width: 768px)" />
+      <source srcset="
+            ./images/contacts/contact-bg-tel.jpg    1x,
+            ./images/contacts/contact-bg-tel-2x.jpg 2x
+          " media="(max-width: 767px)" />
+      <img src="./images/contacts/contact-bg-desk.jpg" alt="keyboard" />
+    </picture>
+    <div class="contact-section__content-wrapper">
+      <div class="contact-section__text-content">
+        <div>
+          <p class="contact-section__text">
+            In case of queries about order handling and/or delay, drop us an
+            email at
+          </p>
+          <a class="contact-section__text" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
+        </div>
+        <address class="contacts">
+          <div class="contacts__block">
+            <h3 class="contact-section__text contacts__title">Email</h3>
+            <a href="mailto:sfg@shopforgamers.com" class="contacts__link">sfg@shopforgamers.com</a>
+          </div>
+          <div class="contacts__block">
+            <h3 class="contact-section__text contacts__title">Phone numbers</h3>
+            <a href="tel:+380936432288" class="contacts__link">+38 (093) 643 22 88</a>
+            <a href="tel:+380503454423" class="contacts__link">+38 (050) 345 44 23</a>
+          </div>
+        </address>
+      </div>
+      <div class="contact-form">
+        <h2 class="contact-form__title">CONTACT US</h2>
+        <form class="callback-form">
+          <label class="callback-form__input-field">
+            <input type="user" class="callback-form__input" placeholder=" " />
+            <span class="callback-form__label">Name</span>
+          </label>
+          <label class="callback-form__input-field">
+            <input type="email" name="mail" class="callback-form__input" placeholder=" " />
+            <span class="callback-form__label">Email</span>
+          </label>
+          <label class="callback-form__input-comment">
+            <span class="callback-form__label callback-form__label--textarea">Leave your message</span>
+            <textarea class="callback-form__comment-input" name="comment" type="textarea"></textarea>
+          </label>
+          <button type="submit" class="btn-secondary btn-secondary--white contact-form__btn">
+            SEND
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
