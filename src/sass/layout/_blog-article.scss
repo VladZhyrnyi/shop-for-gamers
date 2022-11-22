@@ -22,6 +22,18 @@
   }
 }
 
+.blog-article__container {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.blog-article__content-wrapper {
+  @media screen and (max-width: 767px) {
+    padding: 16px;
+  }
+}
+
 .blog-article__title {
   @include font($fw: 600, $fs: 24px, $lh: 28px);
   color: getColor('PrimaryTitleColor');
