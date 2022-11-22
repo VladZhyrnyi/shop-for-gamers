@@ -1,11 +1,9 @@
 .dropdown-menu {
-  @media screen and (max-width: 1279px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
   padding-top: 104px;
   transform: translateX(-100%);
@@ -46,6 +44,10 @@
       (min-resolution: 3dppx) {
       background-image: url('../images/mobile-menu/menu-bcg-tab-3x.jpg');
     }
+  }
+
+  @include desktop {
+    display: none;
   }
 }
 
