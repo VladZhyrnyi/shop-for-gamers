@@ -12,7 +12,7 @@ $bg-color: #004225;
   padding-bottom: 48px;
   background-repeat: no-repeat;
   background-size: 100vw;
-  background-position-y: 43px, 47px, 0;
+  background-position-y: 60px, 66px, 0;
 
   @include tablet {
     padding-top: 120px;
@@ -182,7 +182,7 @@ $bg-color: #004225;
 .callback-form__input {
   // display: block;
   width: 100%;
-
+  color: getColor('PrimaryTitleColor');
   background-color: transparent;
   border: none;
   border-bottom: 1px solid getColor('SecondaryTitleColor');
@@ -225,7 +225,7 @@ $bg-color: #004225;
   height: 95px;
   background-color: transparent;
   border: 1px solid getColor('SecondaryTitleColor');
-
+  color: getColor('PrimaryTitleColor');
   &::placeholder{
     display: none;
   }
@@ -233,6 +233,9 @@ $bg-color: #004225;
 
 .contact-form__btn {
   margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  display: flex;
+  @include desktop {
+    margin: 0;
+  }
 }
