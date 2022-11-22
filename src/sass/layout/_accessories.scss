@@ -1,47 +1,34 @@
-.accessories__main {
+.accessories {
   background: getColor('BackgroundColor');
-  background-image: url(../images/accessories/bg/linePhoneTop.svg),
-    url(../images/accessories/bg/linePhoneBottom.svg),
-    url(../images/accessories/bg/bg-mob.jpg);
+}
 
-  @media screen and(max-width:305px) {
-    background-position-y: 262px, 265px, 0px;
-  }
+.accessories__main {
+  background-size: cover;
+  background-image: url(../images/accessories/bg/bg-mob.jpg);
 
   @include phone {
-    background-position-y: 172px, 175px, 0px;
-    background-image: url(../images/accessories/bg/linePhoneTop.svg),
-      url(../images/accessories/bg/linePhoneBottom.svg),
-      url(../images/accessories/bg/bg-mob-2x.jpg);
-    background-image: url(../images/accessories/bg/linePhoneTop.svg),
-      url(../images/accessories/bg/linePhoneBottom.svg),
-      url(../images/accessories/bg/bg-mob-3x.jpg);
+    background-image: url(../images/accessories/bg/bg-mob-2x.jpg);
+    background-image: url(../images/accessories/bg/bg-mob-3x.jpg);
+    background-position-x: 60px;
+    background-position-y: -120px;
   }
 
   @include tablet {
-    background-image: url(../images/accessories/bg/lineTabTop.svg),
-      url(../images/accessories/bg/lineTabBottom.svg),
-      url(../images/accessories/bg/bg-tab.jpg);
-    background-position-y: 290px, 298px, 0px;
-    background-image: url(../images/accessories/bg/lineTabTop.svg),
-      url(../images/accessories/bg/lineTabBottom.svg),
-      url(../images/accessories/bg/bg-tab-2x.jpg);
-    background-image: url(../images/accessories/bg/lineTabTop.svg),
-      url(../images/accessories/bg/lineTabBottom.svg),
-      url(../images/accessories/bg/bg-tab-3x.jpg);
+    background-image: url(../images/accessories/bg/bg-tab.jpg);
+
+    background-image: url(../images/accessories/bg/bg-tab-2x.jpg);
+    background-image: url(../images/accessories/bg/bg-tab-3x.jpg);
+    background-position-x: -100px;
+    background-position-y: -225px;
   }
 
   @include desktop {
-    background-image: url(../images/accessories/bg/lineTop.svg),
-      url(../images/accessories/bg/lineBottom.svg),
-      url(../images/accessories/bg/bg-desctop.jpg);
-    background-position-y: 288px, 296px, 0px;
-    background-image: url(../images/accessories/bg/lineTop.svg),
-      url(../images/accessories/bg/lineBottom.svg),
-      url(../images/accessories/bg/bg-desctop-2x.jpg);
-    background-image: url(../images/accessories/bg/lineTop.svg),
-      url(../images/accessories/bg/lineBottom.svg),
-      url(../images/accessories/bg/bg-desctop-3x.jpg);
+    background-image: url(../images/accessories/bg/bg-desctop.jpg);
+
+    background-image: url(../images/accessories/bg/bg-desctop-2x.jpg);
+    background-image: url(../images/accessories/bg/bg-desctop-3x.jpg);
+    background-position-x: -90px;
+    background-position-y: -120px;
   }
 
   background-repeat: no-repeat;
@@ -53,6 +40,73 @@
   @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+}
+
+.lineTop {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  &__phone {
+    display: none;
+    @media screen and(max-width:767.5px) {
+      display: block;
+      position: absolute;
+      top: 272px;
+    }
+  }
+
+  &__tab {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1279.5px) {
+      display: block;
+      position: absolute;
+      top: 414px;
+    }
+  }
+
+  &__desktop {
+    display: none;
+    @media screen and(min-width:1280px) {
+      display: block;
+    }
+    position: absolute;
+    top: 385px;
+  }
+}
+
+.lineBottom {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  &__phone {
+    display: none;
+    @media screen and(max-width:767.5px) {
+      display: block;
+      position: absolute;
+      top: 276px;
+    }
+  }
+
+  &__tab {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1279.5px) {
+      display: block;
+      position: absolute;
+      top: 422px;
+    }
+  }
+
+  &__desktop {
+    display: none;
+    @media screen and(min-width:1280px) {
+      display: block;
+    }
+    width: 1280px;
+    position: absolute;
+    top: 393px;
   }
 }
 
@@ -110,6 +164,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 24px;
 
     @include tablet {
       flex-direction: row;
@@ -118,6 +173,7 @@
       row-gap: 24px;
       padding-left: 40px;
       padding-right: 40px;
+      margin-bottom: 32px;
     }
 
     @include desktop {
@@ -125,6 +181,7 @@
       row-gap: 24px;
       padding-left: 0px;
       padding-right: 0px;
+      margin-bottom: 48px;
     }
   }
   &__item {
@@ -218,74 +275,324 @@
 
 // TEMP BUTTONS
 
-.filter__list {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
+// .filter__list {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   gap: 24px;
 
-  @include tablet {
-    gap: 53px;
-  }
+//   @include tablet {
+//     gap: 53px;
+//   }
 
-  @include desktop {
-    gap: 42px;
-  }
-}
+//   @include desktop {
+//     gap: 42px;
+//   }
+// }
 
-.filter__item:last-child {
-  @include phone {
-    margin-bottom: 32px;
-  }
-}
+// .filter__item:last-child {
+//   @include phone {
+//     margin-bottom: 32px;
+//   }
+// }
 
-.filter__item {
-  @include tablet {
-    margin-bottom: 72px;
-  }
-}
+// .filter__item {
+//   @include tablet {
+//     margin-bottom: 72px;
+//   }
+// }
 
-.btn--filter {
-  color: #86e543;
-  font-size: 16px;
-  line-height: 1.19px;
-  background-color: transparent;
-  padding: 8px 16px;
-  width: 124px;
-  height: 35px;
-  border: 1px solid getColor('SecondaryTitleColor');
-  border-radius: 16px;
-  cursor: pointer;
+// .btn--filter {
+//   color: #86e543;
+//   font-size: 16px;
+//   line-height: 1.19px;
+//   background-color: transparent;
+//   padding: 8px 16px;
+//   width: 124px;
+//   height: 35px;
+//   border: 1px solid getColor('SecondaryTitleColor');
+//   border-radius: 16px;
+//   cursor: pointer;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include tablet {
-    width: 132px;
-    height: 51px;
-    padding: 16px 28px;
-  }
+//   @include tablet {
+//     width: 132px;
+//     height: 51px;
+//     padding: 16px 28px;
+//   }
 
-  @include desktop {
-    width: 168px;
-    padding: 16px 48px;
-  }
+//   @include desktop {
+//     width: 168px;
+//     padding: 16px 48px;
+//   }
 
-  &:hover,
-  &:focus {
-    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
-      drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
-  }
+//   &:hover,
+//   &:focus {
+//     filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
+//       drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+//   }
 
-  &:active {
-    border: none;
-    color: getColor('BackgroundColor');
-    background-color: getColor('SecondaryTitleColor');
-    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
-      0px 4px 20px rgba(134, 229, 67, 0.4);
-  }
-}
+//   &:active {
+//     border: none;
+//     color: getColor('BackgroundColor');
+//     background-color: getColor('SecondaryTitleColor');
+//     box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+//       0px 4px 20px rgba(134, 229, 67, 0.4);
+//   }
+// }
+// .swiper {
+//   width: 285px;
+//   height: 2488px;
+//   @include tablet {
+//     width: 608px;
+//     height: 2442px;
+//   }
+//   @include desktop {
+//     width: 1200px;
+//     height: 1720px;
+//   }
+// }
+
+// .swiper-pagination-bullet {
+//   width: 16px;
+//   height: 16px;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   margin: 8px;
+// }
+
+// .swiper-pagination-bullet-active {
+//   width: 40px;
+//   height: 16px;
+
+//   background: #ffffff;
+//   border-radius: 30px;
+//   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,88px);
+// }
+
+
+// ...................................................
+// .header {
+//   position: relative;
+//   z-index: 2;
+
+//   padding: 24px 0;
+
+//   background-color: getColor('BackgroundColor');
+
+//   box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
+//     0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+
+//   @include tablet {
+//     padding: 40px 0;
+//   }
+// }
+
+// .header__container {
+//   @include flex-position(space-between, center);
+// }
+
+// .menu-btn {
+//   width: 50px;
+//   height: 50px;
+//   @include flex-position();
+
+//   background-color: transparent;
+//   border: none;
+
+//   @include desktop {
+//     display: none;
+//   }
+// }
+
+// .menu-btn__icon-menu {
+//   .menu-btn.is-open & {
+//     display: none;
+//   }
+// }
+// .menu-btn__icon-cross {
+//   display: none;
+
+//   .menu-btn.is-open & {
+//     display: block;
+//   }
+// }
+
+// .navigation {
+//   display: none;
+
+//   @include desktop {
+//     display: flex;
+//   }
+// }
+
+// .navigation__list {
+//   display: flex;
+//   gap: 48px;
+// }
+
+// .navigation__item {
+// }
+
+// .navigation__link {
+//   position: relative;
+//   padding: 8px 0;
+
+//   font-size: 16px;
+//   line-height: 1;
+
+//   color: getColor('PrimaryTitleColor');
+
+//   &:hover,
+//   &:focus {
+//     &::after {
+//       content: '';
+//       height: 2px;
+//       width: 100%;
+//       position: absolute;
+//       bottom: 0;
+//       right: 0;
+//       border-radius: 1px;
+//       background-color: getColor('SecondaryTitleColor');
+//     }
+//   }
+// }
+
+// .header__button {
+//   display: none;
+
+//   @include tablet {
+//     display: block;
+//   }
+// }
+
+// .footer-page {
+//   background-color: #001414;
+// }
+// .footer-page__container {
+//   padding: 25px 32px 24px 16px;
+
+//   @include tablet {
+//     display: flex;
+//     margin: 0 auto;
+//     align-items: flex-start;
+//     justify-content: center;
+//   }
+// }
+// .footer-page__logo {
+  // @include font (700);
+  // width: 116px;
+  // color: colors('PrimaryTitleColor');
+  // text-transform: uppercase;
+  // text-align: center;
+//   display: block;
+//   @include tablet {
+//     margin-right: 61px;
+//   }
+//   @include desktop {
+//     margin-right: 118px;
+//   }
+// }
+// .footer-page__group {
+//   display: flex;
+//   justify-content: space-between;
+//   @media screen and (min-width: 320px) {
+//     gap: 160px;
+//   }
+//   @media screen and (max-width: 767px) {
+//     margin-bottom: 25px;
+//     margin-top: 25px;
+//   }
+//   @include tablet {
+//     gap: 89px;
+//     margin-right: 73px;
+//   }
+//   @include desktop {
+//     gap: 217px;
+//     margin-right: 281px;
+//   }
+// }
+// .footer-page__navigation {
+// }
+
+// .footer-page__list {
+// }
+
+// .footer-page__item {
+//   &:not(:last-child) {
+//     margin-bottom: 16px;
+//   }
+// }
+
+// .footer-page__nav-link {
+//   @include font(400, 16px, 16px);
+//   color: #ffffff;
+// }
+
+// .footer-page__social-links {
+//   @media screen and (max-width: 767px) {
+//     margin-bottom: 24px;
+//   }
+// }
+
+// .footer-page__social-links-list {
+//   @include tablet {
+//     display: flex;
+//     gap: 16px;
+//   }
+//   @include desktop {
+//     flex-direction: column;
+//     gap: 16px;
+//   }
+// }
+
+// .footer-page__social-item {
+//   @media screen and (max-width: 767px) {
+//     &:not(:last-child) {
+//       margin-bottom: 32px;
+//     }
+//   }
+// }
+
+// .social-link {
+//   width: 24px;
+//   height: 24px;
+//   border-radius: 50%;
+//   background-color: #ffffff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .footer-page__contact {
+// }
+
+// .contact-mail {
+//   margin-bottom: 16px;
+
+//   .contact-mail__item:not(:last-child) {
+//     margin-bottom: 8px;
+//   }
+// }
+// .footer-page__title {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.18;
+//   color: #ffffff;
+// }
+// .footer-page__contact-link {
+//   @include font(null, 16px, 18px);
+//   letter-spacing: 0.01em;
+//   color: #8d9289;
+// }
+// .contact-phone {
+//   li:not(:last-child) {
+//     margin-bottom: 8px;
+//   }
+// }

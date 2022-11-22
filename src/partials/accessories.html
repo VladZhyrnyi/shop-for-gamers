@@ -1,53 +1,216 @@
-<main class="accessories accessories__main container">
-  <!-- Filter -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SFG | Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="logo">SHOP FOR GAMERS</a>
 
-  <ul class="filter filter__list">
-    <li class="filter__item">
-      <button type="button" class="btn filter__btn btn--filter">All</button>
-    </li>
-    <li class="filter__item">
-      <button type="button" class="btn filter__btn btn--filter">
-        Headsets
-      </button>
-    </li>
-    <li class="filter__item">
-      <button type="button" class="btn filter__btn btn--filter">
-        Keyboards
-      </button>
-    </li>
-    <li class="filter__item">
-      <button type="button" class="btn filter__btn btn--filter">Mouses</button>
-    </li>
-  </ul>
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu"
+          menu-button
+        >
+          <svg width="50" height="50" aria-label="mobile menu switcher">
+            <use
+              href="./images/icons.svg#icon-menu"
+              class="menu-btn__icon-menu"
+            ></use>
+            <use
+              href="./images/icons.svg#icon-cross"
+              class="menu-btn__icon-cross"
+            ></use>
+          </svg>
+        </button>
 
-  <!-- Title -->
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./accessories-page.html" class="navigation__link"
+                >Accessories</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="./contacts-page.html" class="navigation__link"
+                >Contact</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="./blog-page.html" class="navigation__link">Blog</a>
+            </li>
+          </ul>
+        </nav>
 
-  <h1 class="accessorTitle accessorTitle__text">All accessories</h1>
+        <a
+          href="./accessories-page.html"
+          class="btn-primary btn-primary--small header__button"
+          >Shop now</a
+        >
+      </div>
+    </header> -->
 
-  <!-- Accessories -->
+    <!-- ........................................................... -->
+    <main class="accessories">
+      <section class="container accessories__main">
+        <ul class="filter filter__list">
+          <li class="filter__item">
+            <button type="button" class="btn filter__btn btn--filter">
+              All
+            </button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="btn filter__btn btn--filter">
+              Headsets
+            </button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="btn filter__btn btn--filter">
+              Keyboards
+            </button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="btn filter__btn btn--filter">
+              Mouses
+            </button>
+          </li>
+        </ul>
 
-  <ul class="accessor accessor__list">
-    <li class="accessor__item">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/xiberia-k9.jpg    1x,
-                ./images/accessories/headsets/xiberia-k9-2x.jpg 2x,
-                ./images/accessories/headsets/xiberia-k9-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/xiberia-k9.jpg"
-              alt="Headset"
-              width="285"
-            />
-          </picture>
+        <!-- Title -->
 
-          <pre class="accessor__overlay">
+        <h1 class="accessorTitle accessorTitle__text">All accessories</h1>
+
+        <!-- Lines -->
+
+        <div class="lineTop">
+          <img
+            src="./images/accessories/bg/linePhoneTop.svg"
+            alt=""
+            class="lineTop__phone"
+          />
+          <img
+            src="./images/accessories/bg/lineTabTop.svg"
+            alt=""
+            class="lineTop__tab"
+          />
+          <img
+            src="./images/accessories/bg/lineTopDesktop.svg"
+            alt=""
+            class="lineTop__desktop"
+          />
+        </div>
+
+        <div class="lineBottom">
+          <img
+            src="./images/accessories/bg/linePhoneBottom.svg"
+            alt=""
+            class="lineBottom__phone"
+          />
+          <img
+            src="./images/accessories/bg/lineTabBottom.svg"
+            alt=""
+            class="lineBottom__tab"
+          />
+          <img
+            src="./images/accessories/bg/lineBottomDesktop.svg"
+            alt=""
+            class="lineBottom__desktop"
+          />
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper">  
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">      
+          <ul class="accessor accessor__list">
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+             
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <div class="accessor__thumb">
+                <h2 class="accessor__subtitle">
+                  Xiberia K9 PRO PC <span class="subText">Headset</span>
+                </h2>
+                <div class="accessor__priceThumb">
+                  <p class="accessor__fullPrise">65.14 USD</p>
+                  <p class="accessor__lowPrice">55.14 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95.jpg    1x,
+                      ./images/accessories/headsets/g95-2x.jpg 2x,
+                      ./images/accessories/headsets/g95-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -61,41 +224,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <div class="accessor__thumb">
-          <h2 class="accessor__subtitle">
-            Xiberia K9 PRO PC <span class="subText">Headset</span>
-          </h2>
-          <div class="accessor__priceThumb">
-            <p class="accessor__fullPrise">65.14 USD</p>
-            <p class="accessor__lowPrice">55.14 USD</p>
-          </div>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/g95.jpg    1x,
-                ./images/accessories/headsets/g95-2x.jpg 2x,
-                ./images/accessories/headsets/g95-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/g95.jpg"
-              alt="Gaming Headset"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.78 USD</p>
+                <p class="accessor__lowPrice">51.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/maloom1200.jpg    1x,
+                      ./images/accessories/mouses/maloom1200-2x.jpg 2x,
+                      ./images/accessories/mouses/maloom1200-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/maloom1200.jpg"
+                    alt="Wireless Mouse"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -109,39 +271,41 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          G95 Light Surround <span class="subText">Gaming Headset</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">72.78 USD</p>
-          <p class="accessor__lowPrice">51.78 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/mouses/maloom1200.jpg    1x,
-                ./images/accessories/mouses/maloom1200-2x.jpg 2x,
-                ./images/accessories/mouses/maloom1200-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/mouses/maloom1200.jpg"
-              alt="Wireless Mouse"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                Malloom 1200 DPI 2.4Ghz
+                <span class="subText">Wireless Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">44.24 USD</p>
+                <p class="accessor__lowPrice">29.93 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -155,39 +319,41 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          Malloom 1200 DPI 2.4Ghz <span class="subText">Wireless Mouse</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">44.24 USD</p>
-          <p class="accessor__lowPrice">29.93 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/keyboards/steampunk-kbd.jpg    1x,
-                ./images/accessories/keyboards/steampunk-kbd-2x.jpg 2x,
-                ./images/accessories/keyboards/steampunk-kbd-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/keyboards/steampunk-kbd.jpg"
-              alt="Mechanical Keyboard"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">160.00 USD</p>
+                <p class="accessor__lowPrice">110.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9pro.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9pro-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9pro-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9pro.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -201,40 +367,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          Steampunk Anti-Ghosting
-          <span class="subText">Mechanical Keyboard</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">160.00 USD</p>
-          <p class="accessor__lowPrice">110.00 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/xiberia-k9pro.jpg    1x,
-                ./images/accessories/headsets/xiberia-k9pro-2x.jpg 2x,
-                ./images/accessories/headsets/xiberia-k9pro-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/xiberia-k9pro.jpg"
-              alt="Headset"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                Xiberia K9 PRO PC <span class="subText">Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/rbg-kbd.jpg    1x,
+                      ./images/accessories/keyboards/rbg-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/rbg-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/rbg-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -248,39 +414,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          Xiberia K9 PRO PC <span class="subText">Headset</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">156.00 USD</p>
-          <p class="accessor__lowPrice">116.00 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/keyboards/rbg-kbd.jpg    1x,
-                ./images/accessories/keyboards/rbg-kbd-2x.jpg 2x,
-                ./images/accessories/keyboards/rbg-kbd-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/keyboards/rbg-kbd.jpg"
-              alt="Mechanical Keyboard"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                RGB LED Backlit <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/darshion.jpg    1x,
+                      ./images/accessories/mouses/darshion-2x.jpg 2x,
+                      ./images/accessories/mouses/darshion-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/darshion.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -294,85 +461,41 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          RGB LED Backlit <span class="subText">Mechanical Keyboard</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">156.00 USD</p>
-          <p class="accessor__lowPrice">116.00 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/mouses/darshion.jpg    1x,
-                ./images/accessories/mouses/darshion-2x.jpg 2x,
-                ./images/accessories/mouses/darshion-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/mouses/darshion.jpg"
-              alt="Gaming Mouse"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                DARSHION 3200 DPI
+                <span class="subText">MZ-17 Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">48.00 USD</p>
+                <p class="accessor__lowPrice">32.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/k569.jpg    1x,
+                      ./images/accessories/keyboards/k569-2x.jpg 2x,
+                      ./images/accessories/keyboards/k569-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/k569.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
-100% Brand new and high quality! 
-
-Ergonomic in design makes it more
-adjustable to use. 
-
-More fashionable for your daily use,
-such as playing games. 
-
-Built-in high sensitivity and noise 
-reduction microphone. 
-            
-It is not easy to break or deform, and 
-wear comfortable, no pressure.
-          </pre>
-        </div>
-
-        <h2 class="accessor__subtitle">
-          DARSHION 3200 DPI <span class="subText">MZ-17 Gaming Mouse</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">48.00 USD</p>
-          <p class="accessor__lowPrice">32.00 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/keyboards/k569.jpg    1x,
-                ./images/accessories/keyboards/k569-2x.jpg 2x,
-                ./images/accessories/keyboards/k569-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/keyboards/k569.jpg"
-              alt="Mechanical Keyboard"
-              width="285"
-            />
-          </picture>
-
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -386,39 +509,41 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          K569 RGB LED Backlit <span class="subText">Mechanical Keyboard</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">156.98 USD</p>
-          <p class="accessor__lowPrice">112.16 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/keyboards/steampunk2-kbd.jpg    1x,
-                ./images/accessories/keyboards/steampunk2-kbd-2x.jpg 2x,
-                ./images/accessories/keyboards/steampunk2-kbd-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/keyboards/steampunk2-kbd.jpg"
-              alt="Mechanical Keyboard"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                K569 RGB LED Backlit
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.98 USD</p>
+                <p class="accessor__lowPrice">112.16 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk2-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk2-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk2-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk2-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -432,40 +557,41 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          Steampunk Anti-Ghosting
-          <span class="subText">Mechanical Keyboard</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">82.40 USD</p>
-          <p class="accessor__lowPrice">62.40 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/wired-headphones.jpg    1x,
-                ./images/accessories/headsets/wired-headphones-2x.jpg 2x,
-                ./images/accessories/headsets/wired-headphones-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/wired-headphones.jpg"
-              alt="Headphones For PS4"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">82.40 USD</p>
+                <p class="accessor__lowPrice">62.40 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/wired-headphones.jpg    1x,
+                      ./images/accessories/headsets/wired-headphones-2x.jpg 2x,
+                      ./images/accessories/headsets/wired-headphones-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/wired-headphones.jpg"
+                    alt="Headphones For PS4"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -479,39 +605,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          Wired Gaming <span class="subText">Headphones For PS4</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">72.65 USD</p>
-          <p class="accessor__lowPrice">47.55 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden tabHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/havit.jpg    1x,
-                ./images/accessories/headsets/havit-2x.jpg 2x,
-                ./images/accessories/headsets/havit-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/havit.jpg"
-              alt="Gaming Headset"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                Wired Gaming <span class="subText">Headphones For PS4</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.65 USD</p>
+                <p class="accessor__lowPrice">47.55 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/havit.jpg    1x,
+                      ./images/accessories/headsets/havit-2x.jpg 2x,
+                      ./images/accessories/headsets/havit-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/havit.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -525,39 +652,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          HAVIT USB 3.5mm <span class="subText">Gaming Headset</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">65.14 USD</p>
-          <p class="accessor__lowPrice">53.98 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden tabHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/somic.jpg    1x,
-                ./images/accessories/headsets/somic-2x.jpg 2x,
-                ./images/accessories/headsets/somic-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/somic.jpg"
-              alt="Gaming Headset"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                HAVIT USB 3.5mm <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">65.14 USD</p>
+                <p class="accessor__lowPrice">53.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/somic.jpg    1x,
+                      ./images/accessories/headsets/somic-2x.jpg 2x,
+                      ./images/accessories/headsets/somic-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/somic.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -571,39 +699,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          Somic G936N PS4 <span class="subText">Gaming Headset</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">102.00 USD</p>
-          <p class="accessor__lowPrice">66.78 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/mouses/aula.jpg    1x,
-                ./images/accessories/mouses/aula-2x.jpg 2x,
-                ./images/accessories/mouses/aula-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/mouses/aula.jpg"
-              alt="Gaming Mouse"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                Somic G936N PS4 <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">102.00 USD</p>
+                <p class="accessor__lowPrice">66.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/aula.jpg    1x,
+                      ./images/accessories/mouses/aula-2x.jpg 2x,
+                      ./images/accessories/mouses/aula-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/aula.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -617,39 +746,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          AULA SI9006 <span class="subText">Gaming Mouse</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">89.13 USD</p>
-          <p class="accessor__lowPrice">64.13 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/mouses/hxsj.jpg    1x,
-                ./images/accessories/mouses/hxsj-2x.jpg 2x,
-                ./images/accessories/mouses/hxsj-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/mouses/hxsj.jpg"
-              alt="Wired Gaming Mouse"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                AULA SI9006 <span class="subText">Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">89.13 USD</p>
+                <p class="accessor__lowPrice">64.13 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/hxsj.jpg    1x,
+                      ./images/accessories/mouses/hxsj-2x.jpg 2x,
+                      ./images/accessories/mouses/hxsj-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/hxsj.jpg"
+                    alt="Wired Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -663,39 +793,41 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          HXSJ A903 3200 DPI USB <span class="subText">Wired Gaming Mouse</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">50.49 USD</p>
-          <p class="accessor__lowPrice">32.49 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden tabHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/headsets/g95g.jpg    1x,
-                ./images/accessories/headsets/g95g-2x.jpg 2x,
-                ./images/accessories/headsets/g95g-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/headsets/g95g.jpg"
-              alt="Gaming Headset"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                HXSJ A903 3200 DPI USB
+                <span class="subText">Wired Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">50.49 USD</p>
+                <p class="accessor__lowPrice">32.49 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95g.jpg    1x,
+                      ./images/accessories/headsets/g95g-2x.jpg 2x,
+                      ./images/accessories/headsets/g95g-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95g.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -709,39 +841,40 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          G95 Light Surround <span class="subText">Gaming Headset</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">78.98 USD</p>
-          <p class="accessor__lowPrice">50.98 USD</p>
-        </div>
-      </a>
-    </li>
-    <li class="accessor__item mobHidden tabHidden">
-      <a href="#" class="accessor__link">
-        <div class="accessor__overlayWrap">
-          <picture>
-            <source
-              srcset="
-                ./images/accessories/keyboards/ymdk.jpg    1x,
-                ./images/accessories/keyboards/ymdk-2x.jpg 2x,
-                ./images/accessories/keyboards/ymdk-3x.jpg 3x
-              "
-              media="(min-width:320px)"
-            />
-            <img
-              class="accessor__img"
-              src="./images/accessories/keyboards/ymdk.jpg"
-              alt="Keyboard"
-              width="285"
-            />
-          </picture>
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">78.98 USD</p>
+                <p class="accessor__lowPrice">50.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/ymdk.jpg    1x,
+                      ./images/accessories/keyboards/ymdk-2x.jpg 2x,
+                      ./images/accessories/keyboards/ymdk-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/ymdk.jpg"
+                    alt="Keyboard"
+                    width="285"
+                  />
+                </picture>
 
-          <pre class="accessor__overlay">
+                <pre class="accessor__overlay">
 100% Brand new and high quality! 
 
 Ergonomic in design makes it more
@@ -755,17 +888,2403 @@ reduction microphone.
             
 It is not easy to break or deform, and 
 wear comfortable, no pressure.
-          </pre>
-        </div>
+          </pre
+                >
+              </div>
 
-        <h2 class="accessor__subtitle">
-          YMDK Double Shot <span class="subText">104 Keyboard</span>
-        </h2>
-        <div class="accessor__priceThumb">
-          <p class="accessor__fullPrise">71.77 USD</p>
-          <p class="accessor__lowPrice">46.77 USD</p>
+              <h2 class="accessor__subtitle">
+                YMDK Double Shot <span class="subText">104 Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">71.77 USD</p>
+                <p class="accessor__lowPrice">46.77 USD</p>
+              </div>
+            </a>
+          </li>
+        </ul></div>
+    <div class="swiper-slide">     
+           <ul class="accessor accessor__list">
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+             
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <div class="accessor__thumb">
+                <h2 class="accessor__subtitle">
+                  Xiberia K9 PRO PC <span class="subText">Headset</span>
+                </h2>
+                <div class="accessor__priceThumb">
+                  <p class="accessor__fullPrise">65.14 USD</p>
+                  <p class="accessor__lowPrice">55.14 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95.jpg    1x,
+                      ./images/accessories/headsets/g95-2x.jpg 2x,
+                      ./images/accessories/headsets/g95-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.78 USD</p>
+                <p class="accessor__lowPrice">51.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/maloom1200.jpg    1x,
+                      ./images/accessories/mouses/maloom1200-2x.jpg 2x,
+                      ./images/accessories/mouses/maloom1200-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/maloom1200.jpg"
+                    alt="Wireless Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Malloom 1200 DPI 2.4Ghz
+                <span class="subText">Wireless Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">44.24 USD</p>
+                <p class="accessor__lowPrice">29.93 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">160.00 USD</p>
+                <p class="accessor__lowPrice">110.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9pro.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9pro-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9pro-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9pro.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Xiberia K9 PRO PC <span class="subText">Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/rbg-kbd.jpg    1x,
+                      ./images/accessories/keyboards/rbg-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/rbg-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/rbg-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                RGB LED Backlit <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/darshion.jpg    1x,
+                      ./images/accessories/mouses/darshion-2x.jpg 2x,
+                      ./images/accessories/mouses/darshion-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/darshion.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                DARSHION 3200 DPI
+                <span class="subText">MZ-17 Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">48.00 USD</p>
+                <p class="accessor__lowPrice">32.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/k569.jpg    1x,
+                      ./images/accessories/keyboards/k569-2x.jpg 2x,
+                      ./images/accessories/keyboards/k569-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/k569.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use.  
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                K569 RGB LED Backlit
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.98 USD</p>
+                <p class="accessor__lowPrice">112.16 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk2-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk2-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk2-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk2-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">82.40 USD</p>
+                <p class="accessor__lowPrice">62.40 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/wired-headphones.jpg    1x,
+                      ./images/accessories/headsets/wired-headphones-2x.jpg 2x,
+                      ./images/accessories/headsets/wired-headphones-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/wired-headphones.jpg"
+                    alt="Headphones For PS4"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Wired Gaming <span class="subText">Headphones For PS4</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.65 USD</p>
+                <p class="accessor__lowPrice">47.55 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/havit.jpg    1x,
+                      ./images/accessories/headsets/havit-2x.jpg 2x,
+                      ./images/accessories/headsets/havit-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/havit.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                HAVIT USB 3.5mm <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">65.14 USD</p>
+                <p class="accessor__lowPrice">53.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/somic.jpg    1x,
+                      ./images/accessories/headsets/somic-2x.jpg 2x,
+                      ./images/accessories/headsets/somic-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/somic.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Somic G936N PS4 <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">102.00 USD</p>
+                <p class="accessor__lowPrice">66.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/aula.jpg    1x,
+                      ./images/accessories/mouses/aula-2x.jpg 2x,
+                      ./images/accessories/mouses/aula-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/aula.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                AULA SI9006 <span class="subText">Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">89.13 USD</p>
+                <p class="accessor__lowPrice">64.13 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/hxsj.jpg    1x,
+                      ./images/accessories/mouses/hxsj-2x.jpg 2x,
+                      ./images/accessories/mouses/hxsj-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/hxsj.jpg"
+                    alt="Wired Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                HXSJ A903 3200 DPI USB
+                <span class="subText">Wired Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">50.49 USD</p>
+                <p class="accessor__lowPrice">32.49 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95g.jpg    1x,
+                      ./images/accessories/headsets/g95g-2x.jpg 2x,
+                      ./images/accessories/headsets/g95g-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95g.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">78.98 USD</p>
+                <p class="accessor__lowPrice">50.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/ymdk.jpg    1x,
+                      ./images/accessories/keyboards/ymdk-2x.jpg 2x,
+                      ./images/accessories/keyboards/ymdk-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/ymdk.jpg"
+                    alt="Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone.  
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                YMDK Double Shot <span class="subText">104 Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">71.77 USD</p>
+                <p class="accessor__lowPrice">46.77 USD</p>
+              </div>
+            </a>
+          </li>
+        </ul></div>
+    <div class="swiper-slide">      
+          <ul class="accessor accessor__list">
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+             
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <div class="accessor__thumb">
+                <h2 class="accessor__subtitle">
+                  Xiberia K9 PRO PC <span class="subText">Headset</span>
+                </h2>
+                <div class="accessor__priceThumb">
+                  <p class="accessor__fullPrise">65.14 USD</p>
+                  <p class="accessor__lowPrice">55.14 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95.jpg    1x,
+                      ./images/accessories/headsets/g95-2x.jpg 2x,
+                      ./images/accessories/headsets/g95-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.78 USD</p>
+                <p class="accessor__lowPrice">51.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/maloom1200.jpg    1x,
+                      ./images/accessories/mouses/maloom1200-2x.jpg 2x,
+                      ./images/accessories/mouses/maloom1200-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/maloom1200.jpg"
+                    alt="Wireless Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Malloom 1200 DPI 2.4Ghz
+                <span class="subText">Wireless Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">44.24 USD</p>
+                <p class="accessor__lowPrice">29.93 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">160.00 USD</p>
+                <p class="accessor__lowPrice">110.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9pro.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9pro-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9pro-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9pro.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Xiberia K9 PRO PC <span class="subText">Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/rbg-kbd.jpg    1x,
+                      ./images/accessories/keyboards/rbg-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/rbg-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/rbg-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                RGB LED Backlit <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/darshion.jpg    1x,
+                      ./images/accessories/mouses/darshion-2x.jpg 2x,
+                      ./images/accessories/mouses/darshion-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/darshion.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                DARSHION 3200 DPI
+                <span class="subText">MZ-17 Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">48.00 USD</p>
+                <p class="accessor__lowPrice">32.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/k569.jpg    1x,
+                      ./images/accessories/keyboards/k569-2x.jpg 2x,
+                      ./images/accessories/keyboards/k569-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/k569.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use.  
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                K569 RGB LED Backlit
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.98 USD</p>
+                <p class="accessor__lowPrice">112.16 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk2-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk2-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk2-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk2-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">82.40 USD</p>
+                <p class="accessor__lowPrice">62.40 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/wired-headphones.jpg    1x,
+                      ./images/accessories/headsets/wired-headphones-2x.jpg 2x,
+                      ./images/accessories/headsets/wired-headphones-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/wired-headphones.jpg"
+                    alt="Headphones For PS4"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Wired Gaming <span class="subText">Headphones For PS4</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.65 USD</p>
+                <p class="accessor__lowPrice">47.55 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/havit.jpg    1x,
+                      ./images/accessories/headsets/havit-2x.jpg 2x,
+                      ./images/accessories/headsets/havit-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/havit.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                HAVIT USB 3.5mm <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">65.14 USD</p>
+                <p class="accessor__lowPrice">53.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/somic.jpg    1x,
+                      ./images/accessories/headsets/somic-2x.jpg 2x,
+                      ./images/accessories/headsets/somic-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/somic.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Somic G936N PS4 <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">102.00 USD</p>
+                <p class="accessor__lowPrice">66.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/aula.jpg    1x,
+                      ./images/accessories/mouses/aula-2x.jpg 2x,
+                      ./images/accessories/mouses/aula-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/aula.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                AULA SI9006 <span class="subText">Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">89.13 USD</p>
+                <p class="accessor__lowPrice">64.13 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/hxsj.jpg    1x,
+                      ./images/accessories/mouses/hxsj-2x.jpg 2x,
+                      ./images/accessories/mouses/hxsj-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/hxsj.jpg"
+                    alt="Wired Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                HXSJ A903 3200 DPI USB
+                <span class="subText">Wired Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">50.49 USD</p>
+                <p class="accessor__lowPrice">32.49 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95g.jpg    1x,
+                      ./images/accessories/headsets/g95g-2x.jpg 2x,
+                      ./images/accessories/headsets/g95g-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95g.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">78.98 USD</p>
+                <p class="accessor__lowPrice">50.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/ymdk.jpg    1x,
+                      ./images/accessories/keyboards/ymdk-2x.jpg 2x,
+                      ./images/accessories/keyboards/ymdk-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/ymdk.jpg"
+                    alt="Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone.  
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                YMDK Double Shot <span class="subText">104 Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">71.77 USD</p>
+                <p class="accessor__lowPrice">46.77 USD</p>
+              </div>
+            </a>
+          </li>
+        </ul></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+        <!-- Accessories -->
+
+        <ul class="accessor accessor__list">
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+             
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <div class="accessor__thumb">
+                <h2 class="accessor__subtitle">
+                  Xiberia K9 PRO PC <span class="subText">Headset</span>
+                </h2>
+                <div class="accessor__priceThumb">
+                  <p class="accessor__fullPrise">65.14 USD</p>
+                  <p class="accessor__lowPrice">55.14 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95.jpg    1x,
+                      ./images/accessories/headsets/g95-2x.jpg 2x,
+                      ./images/accessories/headsets/g95-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.78 USD</p>
+                <p class="accessor__lowPrice">51.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/maloom1200.jpg    1x,
+                      ./images/accessories/mouses/maloom1200-2x.jpg 2x,
+                      ./images/accessories/mouses/maloom1200-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/maloom1200.jpg"
+                    alt="Wireless Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Malloom 1200 DPI 2.4Ghz
+                <span class="subText">Wireless Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">44.24 USD</p>
+                <p class="accessor__lowPrice">29.93 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">160.00 USD</p>
+                <p class="accessor__lowPrice">110.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/xiberia-k9pro.jpg    1x,
+                      ./images/accessories/headsets/xiberia-k9pro-2x.jpg 2x,
+                      ./images/accessories/headsets/xiberia-k9pro-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/xiberia-k9pro.jpg"
+                    alt="Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Xiberia K9 PRO PC <span class="subText">Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/rbg-kbd.jpg    1x,
+                      ./images/accessories/keyboards/rbg-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/rbg-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/rbg-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                RGB LED Backlit <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.00 USD</p>
+                <p class="accessor__lowPrice">116.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/darshion.jpg    1x,
+                      ./images/accessories/mouses/darshion-2x.jpg 2x,
+                      ./images/accessories/mouses/darshion-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/darshion.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                DARSHION 3200 DPI
+                <span class="subText">MZ-17 Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">48.00 USD</p>
+                <p class="accessor__lowPrice">32.00 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/k569.jpg    1x,
+                      ./images/accessories/keyboards/k569-2x.jpg 2x,
+                      ./images/accessories/keyboards/k569-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/k569.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use.  
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                K569 RGB LED Backlit
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">156.98 USD</p>
+                <p class="accessor__lowPrice">112.16 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/steampunk2-kbd.jpg    1x,
+                      ./images/accessories/keyboards/steampunk2-kbd-2x.jpg 2x,
+                      ./images/accessories/keyboards/steampunk2-kbd-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/steampunk2-kbd.jpg"
+                    alt="Mechanical Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Steampunk Anti-Ghosting
+                <span class="subText">Mechanical Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">82.40 USD</p>
+                <p class="accessor__lowPrice">62.40 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/wired-headphones.jpg    1x,
+                      ./images/accessories/headsets/wired-headphones-2x.jpg 2x,
+                      ./images/accessories/headsets/wired-headphones-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/wired-headphones.jpg"
+                    alt="Headphones For PS4"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Wired Gaming <span class="subText">Headphones For PS4</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">72.65 USD</p>
+                <p class="accessor__lowPrice">47.55 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/havit.jpg    1x,
+                      ./images/accessories/headsets/havit-2x.jpg 2x,
+                      ./images/accessories/headsets/havit-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/havit.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                HAVIT USB 3.5mm <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">65.14 USD</p>
+                <p class="accessor__lowPrice">53.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/somic.jpg    1x,
+                      ./images/accessories/headsets/somic-2x.jpg 2x,
+                      ./images/accessories/headsets/somic-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/somic.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                Somic G936N PS4 <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">102.00 USD</p>
+                <p class="accessor__lowPrice">66.78 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/aula.jpg    1x,
+                      ./images/accessories/mouses/aula-2x.jpg 2x,
+                      ./images/accessories/mouses/aula-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/aula.jpg"
+                    alt="Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                AULA SI9006 <span class="subText">Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">89.13 USD</p>
+                <p class="accessor__lowPrice">64.13 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/mouses/hxsj.jpg    1x,
+                      ./images/accessories/mouses/hxsj-2x.jpg 2x,
+                      ./images/accessories/mouses/hxsj-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/mouses/hxsj.jpg"
+                    alt="Wired Gaming Mouse"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                HXSJ A903 3200 DPI USB
+                <span class="subText">Wired Gaming Mouse</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">50.49 USD</p>
+                <p class="accessor__lowPrice">32.49 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/headsets/g95g.jpg    1x,
+                      ./images/accessories/headsets/g95g-2x.jpg 2x,
+                      ./images/accessories/headsets/g95g-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/headsets/g95g.jpg"
+                    alt="Gaming Headset"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone. 
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                G95 Light Surround <span class="subText">Gaming Headset</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">78.98 USD</p>
+                <p class="accessor__lowPrice">50.98 USD</p>
+              </div>
+            </a>
+          </li>
+          <li class="accessor__item mobHidden tabHidden">
+            <a href="./order-page.html" class="accessor__link">
+              <div class="accessor__overlayWrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/accessories/keyboards/ymdk.jpg    1x,
+                      ./images/accessories/keyboards/ymdk-2x.jpg 2x,
+                      ./images/accessories/keyboards/ymdk-3x.jpg 3x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="accessor__img"
+                    src="./images/accessories/keyboards/ymdk.jpg"
+                    alt="Keyboard"
+                    width="285"
+                  />
+                </picture>
+
+                <pre class="accessor__overlay">
+100% Brand new and high quality! 
+
+Ergonomic in design makes it more
+adjustable to use. 
+
+More fashionable for your daily use,
+such as playing games. 
+
+Built-in high sensitivity and noise 
+reduction microphone.  
+            
+It is not easy to break or deform, and 
+wear comfortable, no pressure.
+          </pre
+                >
+              </div>
+
+              <h2 class="accessor__subtitle">
+                YMDK Double Shot <span class="subText">104 Keyboard</span>
+              </h2>
+              <div class="accessor__priceThumb">
+                <p class="accessor__fullPrise">71.77 USD</p>
+                <p class="accessor__lowPrice">46.77 USD</p>
+              </div>
+            </a>
+          </li>
+        </ul> 
+      </section>
+    </main>
+    <!-- ............................................................. -->
+    <!-- <footer class="footer-page">
+      <div class="container footer-page__container">
+        <a href="/src/index.html" class="footer-page__logo logo"
+          >shop for gamers</a
+        >
+        <div class="footer-page__group">
+          <nav class="footer-page__navigation">
+            <ul class="footer-page__list">
+              <li class="footer-page__item">
+                <a
+                  href="/src/accessories-page.html"
+                  class="footer-page__nav-link"
+                  >Accessories</a
+                >
+              </li>
+              <li class="footer-page__item">
+                <a href="" class="footer-page__nav-link">Take order</a>
+              </li>
+              <li class="footer-page__item">
+                <a href="/src/contacts-page.html" class="footer-page__nav-link"
+                  >Contact</a
+                >
+              </li>
+              <li class="footer-page__item">
+                <a href="/src/blog-page.html" class="footer-page__nav-link"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-page__social-links">
+            <ul class="footer-page__social-links-list">
+              <li class="footer-page__social-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-svg" width="12" height="12">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-page__social-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-svg" width="12" height="12">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-page__social-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-svg" width="12" height="12">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </a>
-    </li>
-  </ul>
-</main>
+        <div class="footer-page__contact">
+          <ul class="contact-mail">
+            <li class="contact-mail__item">
+              <p class="footer-page__title">Email</p>
+            </li>
+            <li class="contact-mail__item">
+              <a
+                class="footer-page__contact-link"
+                href="mailto:sfg.info@gmail.com"
+                >sfg.info@gmail.com</a
+              >
+            </li>
+          </ul>
+          <ul class="contact-phone">
+            <li><p class="footer-page__title">Phone number</p></li>
+            <li>
+              <a class="footer-page__contact-link" href="tel:+380936432288"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li>
+              <a class="footer-page__contact-link" href="tel:+380503454423"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html> -->
