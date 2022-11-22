@@ -6,8 +6,6 @@
   background-position-y: 46px, 51px;
   background-repeat: no-repeat;
 
-  // background-image: url(../images/blog/Vector-mob.svg),
-  //   url(../images/blog/Vector-2-mob.svg), url(../images/blog/background-mob.jpg);
   // background-position: top;
   // background-size: cover;
   //  background-size: contain;
@@ -84,8 +82,6 @@
   @media screen and (max-width: 767px) {
     padding: 0;
   }
-
-  // outline: 1px solid red;
 }
 
 .blog__container {
@@ -95,6 +91,17 @@
   @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+}
+
+.thumb-picture-desktop {
+  @include desktop {
+    // outline: 1px solid red;
+    position: relative;
+    border-radius: 12px;
+    min-width: 387px;
+    max-height: 364px;
+    overflow: hidden;
   }
 }
 
@@ -155,6 +162,25 @@
   }
 }
 
+.thumb-picture {
+  @media screen and (max-width: 767px) {
+    // outline: 1px solid red;
+    min-width: 320px;
+    max-height: 180px;
+    overflow: hidden;
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    // outline: 1px solid red;
+    border-radius: 12px;
+    min-width: 387px;
+    max-height: 228px;
+    overflow: hidden;
+    margin-top: 16px;
+  }
+}
+
 .article__picture {
   @include desktop {
     display: none;
@@ -181,15 +207,10 @@
 
 .article__image {
   max-width: 100%;
-  margin-top: 16px;
 
   @include tablet {
     min-width: 387px;
     margin-left: 0px;
-  }
-
-  @include desktop {
-    margin-top: 0px;
   }
 }
 
