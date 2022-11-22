@@ -1,21 +1,5 @@
 @import '../node_modules/swiper/swiper-bundle';
 
-.swiper {
-  width: 320px;
-  height: 545px;
-
-  padding-bottom: 60px;
-
-  @include tablet {
-    width: 768px;
-  }
-
-  @include desktop {
-    width: 1280px;
-    height: 550px;
-  }
-}
-
 .swiper-pagination {
   bottom: 20px;
 }
