@@ -1,7 +1,5 @@
-.order {
-}
-.container {
-}
+// .order {
+// }
 
 .order__section-title {
   @include font($fw: 600);
@@ -10,10 +8,29 @@
     @include font(600, 56px, 66px);
   }
 }
-.product {
-}
-.product__container {
-}
+
+// .accessories__main {
+//   background: getColor('BackgroundColor');
+//   background-image: url(../images/accessories/bg/lineTop.svg),
+//     url(../images/accessories/bg/lineBottom.svg),
+//     url(../images/accessories/bg/bg-mob.jpg);
+//
+//   @include tablet {
+//     background-image: url(../images/accessories/bg/lineTabTop.svg),
+//       url(../images/accessories/bg/lineTabBottom.svg),
+//       url(../images/accessories/bg/bg-tab.jpg);
+//   }
+//
+//   @include desktop {
+//     background-image: url(../images/accessories/bg/lineTop.svg),
+//       url(../images/accessories/bg/lineBottom.svg),
+//       url(../images/accessories/bg/bg-desctop.jpg);
+//         background-position-y: 288px, 296px;
+//   }
+
+// .product__container {
+//   @include;
+// }
 .product__title {
   color: getColor('PrimaryTitleColor');
   @include font(600, 32px, 38px);
@@ -21,13 +38,19 @@
     @include font(600, 56px, 66px);
   }
 }
+
 .price {
+  position: relative;
+  height: 40px;
+  width: 100%;
 }
 .price--first-price {
   text-decoration-line: line-through;
   color: getColor('TextGreyColor');
   @include font(600, 16px, 16px);
-
+  position: absolute;
+  top: 0;
+  left: 0;
   @include tablet {
     @include font();
   }
@@ -41,7 +64,9 @@
 .price--second-price {
   color: getColor('SecondaryTitleColor');
   @include font(600, 32px, 32px);
-
+  position: absolute;
+  right: 0;
+  bottom: 0;
   //     font-weight: 600;
   // font-size: 48px;
   // line-height: 1;
@@ -54,13 +79,12 @@
   }
 }
 .product__img-item {
-  width: calc((100% - 48px) / 4);
+  flex-basis: calc((100% - 48px) / 4);
   @include tablet {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
-.order-contact-form {
-}
+// ----CONTACT------
 .order__section-contact-title {
   color: getColor('SecondaryTitleColor');
   @include font($fw: 600);
@@ -102,9 +126,16 @@
   //   }
 }
 
-.order__user-comment {
-}
-.order__button--buy-now {
-}
-.order__button--cart {
+// .order__user-comment {
+// }
+
+.order__buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  @include tablet {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
 }
