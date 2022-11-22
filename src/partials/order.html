@@ -1,6 +1,6 @@
 <section class="order">
   <div class="container">
-    <h2>Take order</h2>
+    <h2 class="order__section-title">Take order</h2>
     <div class="product">
       <div class="product__container">
         <img src="" alt="photo of Xiberia K9 PRO PC Headset" />
@@ -24,23 +24,23 @@
   </div>
 </section>
 <section class="order-contact-form">
-  <h2>Contact us</h2>
+  <h2 class="order__section-contact-title">Contact us</h2>
   <form action="" name="order__form" autocomplete="on" novalidate>
     <div>
       <div class="order__form-field">
-        <label>
+        <label class="order__form-label">
           Name
           <input type="text" name="order__username" autofocus />
         </label>
       </div>
       <div class="order__form-field">
-        <label>
+        <label class="order__form-label">
           Email
           <input type="email" name="order__email" />
         </label>
       </div>
       <div class="order__form-field">
-        <label for="order__color">Color Option</label>
+        <label class="order__form-label" for="order__color">Color Option</label>
         <select id="order__color" name="order__color">
           <option value="k9d-black-orange">K9D Black Orange</option>
           <option value="k9d-silver-gray">K9D Silver Gray</option>
@@ -53,7 +53,7 @@
                 Quantity
                 <input type="number" name="order__quantity" min="0" />
               </label> -->
-        <label for="order__quantity">Quantity</label>
+        <label class="order__form-label" for="order__quantity">Quantity</label>
         <select id="order__quantity" name="order__quantity">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -62,7 +62,7 @@
       </div>
 
       <div class="order__form-field">
-        <label for="order__payment">Payment</label>
+        <label class="order__form-label" for="order__payment">Payment</label>
         <select id="order__payment" name="order__payment">
           <option value="privat24">Privat24</option>
           <option value="monobank">Monobank</option>
@@ -70,7 +70,7 @@
         </select>
       </div>
     </div>
-    <label>
+    <label class="order__form-label">
       Leave your message
       <textarea
         class="order__user-comment"
