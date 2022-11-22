@@ -10,6 +10,7 @@
   //   url(../images/blog/Vector-2-mob.svg), url(../images/blog/background-mob.jpg);
   // background-position: top;
   // background-size: cover;
+  //  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -36,7 +37,7 @@
       url(../images/blog/Vector-2-tab.svg),
       url(../images/blog/background-tab.jpg);
 
-    background-position-y: 164px, 169px, 0px;
+    background-position-y: 164px, 169px, -137px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -61,7 +62,7 @@
     background-image: url(../images/blog/Vector.svg),
       url(../images/blog/Vector-2.svg), url(../images/blog/background.jpg);
 
-    background-position-y: 164px, 169px, 0px;
+    background-position-y: 164px, 169px, -51px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -80,7 +81,10 @@
 }
 
 .container {
-  padding: 0;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+
   // outline: 1px solid red;
 }
 
@@ -88,7 +92,7 @@
   padding-top: 40px;
   padding-bottom: 48px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -109,29 +113,18 @@
   line-height: 1.17;
   color: #ffffff;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 0;
-    margin-left: 99px;
+    margin-left: 59px;
 
     font-size: 56px;
     line-height: 1.18;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-left: 142px;
+  @include desktop {
+    margin-left: 102px;
   }
 }
-
-// .line {
-//   height: 26px;
-
-//   display: block;
-//   // border-bottom: 1px solid black;
-
-//   background-image: url(../images/blog/Vector-mob.svg),
-//     url(../images/blog/Vector-2-mob.svg);
-//   background-position-y: -21px, -16px;
-// }
 
 .blog__list {
   display: flex;
@@ -139,11 +132,11 @@
   gap: 24px;
   margin-top: 31px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: 67px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 75px;
   }
 }
@@ -151,19 +144,19 @@
 .article {
   width: 100%;
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     display: flex;
   }
 }
 
 .wraper-content {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
   }
 }
 
 .article__picture {
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     display: none;
   }
 }
@@ -177,16 +170,12 @@
   line-height: 1.17;
   color: #ffffff;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 40px;
-    margin-left: 40px;
+  @include tablet {
+    margin-right: 0px;
+    margin-left: 0px;
 
     font-size: 56px;
     line-height: 1;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 120px;
   }
 }
 
@@ -194,28 +183,30 @@
   max-width: 100%;
   margin-top: 16px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     min-width: 387px;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 0px;
   }
 }
 
 .wraper-text {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    margin-left: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     flex-direction: row;
     justify-content: space-between;
 
     margin-top: 52px;
+    margin-left: 0px;
   }
 }
 
@@ -229,17 +220,15 @@
   line-height: 100%;
   color: #ffffff;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 40px;
-    margin-left: 40px;
+  @include tablet {
+    margin-right: 0px;
+    margin-left: 0px;
 
     font-size: 24px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 0px;
-    margin-right: 96px;
-    margin-left: 120px;
   }
 }
 
@@ -253,18 +242,22 @@
   line-height: 100%;
   color: #8d9289;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: 32px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
 
     font-size: 24px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 0px;
-    margin-right: 40px;
-    margin-left: 0px;
+  }
+}
+
+.content-desktop {
+  @include desktop {
+    margin-left: 120px;
   }
 }
 
@@ -278,17 +271,16 @@
   line-height: 1.19;
   color: #ffffff;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 40px;
-    margin-left: 40px;
+  @include tablet {
+    margin-right: 0px;
+    margin-left: 0px;
 
     font-size: 24px;
     line-height: 1.17;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 24px;
-    margin-left: 120px;
   }
 }
 
@@ -304,14 +296,14 @@
   line-height: 100%;
   color: #86e543;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 40px;
-    margin-left: 40px;
+  @include tablet {
+    margin-right: 0px;
+    margin-left: 0px;
 
     font-size: 24px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 16px;
   }
 }
@@ -332,4 +324,5 @@
 
 .slider__icon {
   display: block;
+  fill: #ffffff;
 }
