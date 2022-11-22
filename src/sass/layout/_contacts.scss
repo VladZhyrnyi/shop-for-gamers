@@ -3,10 +3,10 @@ $contact-us: #86e543;
 $textarea: #cdcdcd;
 $bg-color: #004225;
 
-.contact {
-  background-image: url(../images/сontacts/line-first-tel.svg),
-    url(../images/сontacts/line-second-tel.svg),
-    url(../images/сontacts/bg-tel-1x.jpg);
+.contact-section {
+  background-image: url(../images/contacts/line-first-tel.svg),
+    url(../images/contacts/line-second-tel.svg),
+    url(../images/contacts/bg-tel-1x.jpg);
   background-color: $bg-color;
   padding-top: 40px;
   padding-bottom: 48px;
@@ -17,20 +17,47 @@ $bg-color: #004225;
   @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url(../images/сontacts/line-first-tablet.svg),
-      url(../images/сontacts/line-second-tablet.svg),
-      url(../images/сontacts/bg-tablet.jpg);
-      background-position-y: 157px, 164px, 0;
+    background-image: url(../images/contacts/line-first-tablet.svg),
+      url(../images/contacts/line-second-tablet.svg),
+      url(../images/contacts/bg-tablet.jpg);
+    background-position-y: 157px, 164px, 0;
   }
 
   @include desktop {
-    background-image: url(../images/сontacts/line-first-desk.svg),
-      url(../images/сontacts/line-second-desk.svg),
-        url(../images/сontacts/bg-desk.jpg);
+    background-image: url(../images/contacts/line-first-desk.svg),
+      url(../images/contacts/line-second-desk.svg),
+      url(../images/contacts/bg-desk.jpg);
   }
 }
 
-.contact-title {
+.contact-section__content-wrapper {
+  @media screen and (max-width: 767px) {
+    padding: 0 16px;
+    padding-top: 16px;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.contact-section__text-content {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+  }
+}
+
+.contact-wraper__text {
+  @include tablet {
+    padding-left: 59px;
+  }
+}
+
+.contact-section__title {
   @include font(600, 24px, 28px);
   color: getColor('PrimaryTitleColor');
   font-style: normal;
@@ -45,7 +72,8 @@ $bg-color: #004225;
   }
 }
 
-.contact-picture {
+.contact-section__picture {
+  display: block;
   margin-bottom: 16px;
 
   @include tablet {
@@ -57,7 +85,7 @@ $bg-color: #004225;
   }
 }
 
-.contact-text {
+.contact-section__text {
   @include font(400, 16px, 19px);
   font-style: normal;
   color: getColor('PrimaryTitleColor');
@@ -66,207 +94,145 @@ $bg-color: #004225;
 
   @include tablet {
     @include font(400, 24px, 28px);
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     max-width: 484px;
   }
 }
 
-.contact-text__case {
-  margin-bottom: 18px;
+.contacts {
+  margin-top: 24px;
 
-  @include tablet {
-    margin-bottom: 28px;
-    word-break: break-all;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-.contact-connect__communication {
-  margin-bottom: 24px;
-
-  @include tablet {
-    margin-bottom: 40px;
-  }
-}
-
-.connect-list__mail {
-  margin-bottom: 24px;
-}
-
-.first-number {
-  margin-bottom: 8px;
-}
-
-.contact-connect {
-  @include desktop {
-    width: 488px;
-  }
-}
-
-.contact-connect__text {
-  @include font(400, 16px, 19px);
-  font-style: normal;
   color: getColor('PrimaryTitleColor');
-  margin-bottom: 8px;
 
   @include tablet {
-    @include font(400, 24px, 28px);
-  }
-}
-
-.contact-connect__list {
-  @include tablet {
-    display: flex;
+    flex-direction: row;
+    gap: 0;
   }
 
   @include desktop {
-    display: block;
+    flex-direction: column;
+    gap: 40px;
   }
 }
 
-.connect-list__mail {
+.contacts__block {
+  text-align: left;
+
   @include tablet {
-    margin-right: 32px;
+    width: 50%;
   }
 }
 
-.contact-connect__mail,
-.contact-connect__tel {
-  @include font(400, 16px, 19px);
-  font-style: normal;
-  color: $contact-color;
+.contacts__title {
+  margin-bottom: 0;
+}
+
+.contacts__link {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.01em;
+
+  color: #8d9289;
+}
+
+.contact-form {
+  margin-top: 24px;
 
   @include tablet {
-    @include font(400, 24px, 28px);
+    width: 590px;
+    margin: 24px auto 0;
+  }
+  
+  @include desktop {
+    width: 50%;
+    margin-top: 0;
   }
 }
 
 .contact-form__title {
   @include font(600, 24px, 28px);
   font-style: normal;
-  color: $contact-us;
+  color: getColor('SecondaryTitleColor');
   margin-bottom: 16px;
 
   @include tablet {
     @include font(600, 36px, 42px);
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
 }
 
-.contact-form {
-  @include tablet {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  @include desktop {
-    width: 590px;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.callback-form {
+  padding-top: 16px;
 }
 
-.input-contact {
-  margin-bottom: 40px;
-}
-
-.contact-label {
-  margin-bottom: 40px;
-}
-
-.contact__container {
-  @media screen and (max-width: 767px) {
-    padding: 0;
-  }
-}
-
-.content-wraper {
-  @media screen and (max-width: 767px) {
-    padding: 0 16px;
-  }
-
-  @include desktop {
-    display: flex;
-    gap: 123px;
-  }
-}
-
-.contact-wraper__text {
-  @include tablet {
-    padding-left: 59px;
-  }
-}
-
-.input-field {
+.callback-form__input-field {
   position: relative;
-}
 
-.input-field__label {
-  @include font(400, 16px, 20px);
-  font-style: normal;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.callback-form__input {
+  // display: block;
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid getColor('SecondaryTitleColor');
+
+  &:focus {
+    outline: none;
+  }
+}
+.callback-form__label {
   position: absolute;
   left: 0;
-  bottom: -1;
+  bottom: 4;
+
+  @include font(400, 16px, 20px);
   color: getColor('PrimaryTitleColor');
   transform: translateY(0);
 
-  .input-field__input:hover + &,
-  .input-field__input:focus + &,
-  .input-field__input:not(:placeholder-shown) + & {
+  .callback-form__input:hover + &,
+  .callback-form__input:focus + &,
+  .callback-form__input:not(:placeholder-shown) + & {
     transform: translateY(-20px);
   }
 
   @include tablet {
     @include font(400, 18px, 20px);
   }
-}
 
-.input-field__input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #86e543;
-  min-width: 288px;
-  color: getColor('PrimaryTitleColor');
-  outline: none;
-
-  @include tablet {
-    min-width: 590px;
+  &--textarea {
+    position: static;
+    margin-bottom: 4px;
   }
 }
 
-.contact-textarea {
+.callback-form__input-comment {
   margin-bottom: 24px;
 }
 
-.contact-textarea__text {
-  @include font(400, 16px, 20px);
-  font-style: normal;
-  color: $textarea;
-  margin-bottom: 4px;
-
-  @include tablet {
-    @include font(400, 18px, 20px);
-  }
-}
-
-.contact-textarea__field {
-  resize: none;
+.callback-form__comment-input {
+  width: 100%;
+  height: 95px;
   background-color: transparent;
-  border-color: $contact-us;
-  color: getColor('PrimaryTitleColor');
-  min-width: 288px;
-  min-height: 95px;
-  outline: none;
+  border: 1px solid getColor('SecondaryTitleColor');
 
-  @include tablet {
-    min-width: 590px;
-    min-height: 120px;
+  &::placeholder{
+    display: none;
   }
 }
 
-.contact-field__btn {
-    display: flex;
-    margin: 0 auto;
-    @include desktop {
-        margin: 0;
-    }
+.contact-form__btn {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
