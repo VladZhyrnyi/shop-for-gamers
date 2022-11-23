@@ -1,32 +1,54 @@
 .take-order-page {
   padding-top: 40px;
   padding-bottom: 48px;
+
   background: getColor('BackgroundColor');
-  background-repeat: no-repeat;
-  background-image: url(../images/take-order/bg/bg-mob-1x.jpeg);
-  background-position-y: 68px center 0, 72px center 0;
+  background-image: url(../images/take-order/bg/line-mob-top.svg),
+    url(../images/take-order/bg/line-mob.svg),
+    url(../images/take-order/bg/bg-mob-1x.jpeg);
+
+  @media screen and(max-width:305px) {
+    background-position-y: 262px, 265px, 0px;
+  }
 
   @include phone {
-    background-image: url(../images/take-order/bg/bg-mob-1x.jpeg);
-    background-position-y: 68px, 72px;
+    background-position-y: 172px, 175px, 0px;
+    background-image: url(../images/take-order/bg/line-mob-top.svg),
+      url(../images/take-order/bg/line-mob.svg),
+      url(../images/take-order/bg/bg-mob-2x.jpeg);
+    background-image: url(../images/take-order/bg/line-mob-top.svg),
+      url(../images/take-order/bg/line-mob.svg),
+      url(../images/take-order/bg/bg-mob-3x.jpeg);
   }
 
   @include tablet {
-    background-image: 
-    // url(../images/take-order/bg/line-desk-top.svg),
-    //   url(../images/take-order/bg/line-desk.svg),
+    background-image: url(../images/take-order/bg/line-tab-top.svg),
+      url(../images/take-order/bg/line-tab.svg),
       url(../images/take-order/bg/bg-tab-1x.jpeg);
-    background-position-y: 186px, 194px;
+    background-position-y: 290px, 298px, 0px;
+    background-image: url(../images/take-order/bg/line-tab-top.svg),
+      url(../images/take-order/bg/line-tab.svg),
+      url(../images/take-order/bg/bg-tab-2x.jpeg);
+    background-image: url(../images/take-order/bg/line-tab-top.svg),
+      url(../images/take-order/bg/line-tab.svg),
+      url(../images/take-order/bg/bg-tab-3x.jpeg);
   }
 
   @include desktop {
-    background-image: 
-    // url(../images/take-order/bg/line-desk-top.svg),
-    //   url(../images/take-order/bg/line-desk.svg),
+    background-image: url(../images/take-order/bg/line-desk-top.svg),
+      url(../images/take-order/bg/line-desk.svg),
       url(../images/take-order/bg/bg-desk-1x.jpeg);
-    background-position-y: 186px, 194px;
-    // background-position-y: 288px, 296px;
+    background-position-y: 288px, 296px, 0px;
+    background-image: url(../images/take-order/bg/line-desk-top.svg),
+      url(../images/take-order/bg/line-desk.svg),
+      url(../images/take-order/bg/bg-desk-2x.jpeg);
+    background-image: url(../images/take-order/bg/line-desk-top.svg),
+      url(../images/take-order/bg/line-desk.svg),
+      url(../images/take-order/bg/bg-desk-3x.jpeg);
   }
+
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .order__section {
@@ -40,18 +62,9 @@
   @include font($fw: 600);
   color: getColor('PrimaryTitleColor');
   padding-bottom: 35px;
-  background-repeat: no-repeat;
-  background-image: url(../images/take-order/bg/line-mob-top.svg),
-    url(../images/take-order/bg/line-mob.svg);
-  @include phone {
-    background-image: url(../images/take-order/bg/line-tab-top.svg),
-      url(../images/take-order/bg/line-tab.svg);
-  }
   @include tablet {
-    background-image: url(../images/take-order/bg/line-desk-top.svg),
-      url(../images/take-order/bg/line-desk.svg);
+    padding-bottom: 51px;
   }
-
   @include desktop {
     padding-bottom: 75px;
   }
