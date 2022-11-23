@@ -13,9 +13,14 @@
 .order__section-title {
   @include font($fw: 600);
   color: getColor('PrimaryTitleColor');
+  padding-bottom: 35px;
 
   @include tablet {
+    padding-bottom: 51px;
     @include font(600, 56px, 66px);
+  }
+  @include desktop {
+    padding-bottom: 75px;
   }
 }
 
@@ -37,6 +42,21 @@
 //       url(../images/accessories/bg/bg-desctop.jpg);
 //         background-position-y: 288px, 296px;
 //   }
+.order-product {
+  @include desktop {
+    display: none;
+  }
+}
+
+.order-product-desktop {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    gap: 121px;
+  }
+}
 
 .order-product__title {
   color: getColor('PrimaryTitleColor');
@@ -45,6 +65,9 @@
   @include tablet {
     @include font(600, 56px, 66px);
     margin-bottom: 24px;
+  }
+  @include desktop {
+    margin-bottom: 32px;
   }
 }
 
@@ -75,8 +98,15 @@
     align-items: center;
     margin-bottom: 0;
   }
+  @include desktop {
+    display: flex;
+    gap: 40px;
+    height: auto;
+    margin-bottom: 40px;
+  }
 }
 .order-price--first-price {
+  display: inline-flex;
   text-decoration-line: line-through;
   color: getColor('TextGreyColor');
   @include font(600, 16px, 16px);
@@ -87,23 +117,29 @@
     top: 72px;
     @include font($fs: 24px, $lh: 24px);
   }
+  @include desktop {
+    position: relative;
+    top: 0;
+  }
 }
 .order-price__currency {
   text-transform: uppercase;
+  display: inline-block;
   &--first-price {
-    margin-left: 5px;
+    padding-left: 5px;
     @include tablet {
-      margin-left: 8px;
+      padding-left: 8px;
     }
   }
   &--second-price {
-    margin-left: 10px;
+    padding-left: 10px;
     @include tablet {
-      margin-left: 16px;
+      padding-left: 16px;
     }
   }
 }
 .order-price--second-price {
+  display: inline-flex;
   color: getColor('SecondaryTitleColor');
   @include font(600, 32px, 32px);
   position: absolute;
@@ -128,22 +164,28 @@
   }
 }
 // ----CONTACT------
+
 .order__section-contact-title {
   color: getColor('SecondaryTitleColor');
   @include font($fw: 600);
   text-transform: uppercase;
   margin-bottom: 16px;
   @include tablet {
+    @include font($fs: 36px, $lh: 42px);
   }
-  //     font-weight: 600;
-  // font-size: 36px;
-  // line-height: 1.17;
+  @include desktop {
+    margin-bottom: 48px;
+  }
 }
 .order__form {
   max-width: 288px;
   @include tablet {
     max-width: 590px;
     margin: 0 auto;
+  }
+  @include desktop {
+    max-width: 1200px;
+    align-items: baseline;
   }
 }
 
@@ -152,6 +194,11 @@
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 24px;
+  @include desktop {
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-bottom: 48px;
+  }
 }
 
 .order__contact-input-wrapper {
@@ -163,7 +210,9 @@
 
 .order__form-field {
   position: relative;
-  margin-bottom: 40px;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
   //   &:last-child {
   //     margin-bottom: 20px;
   //   }
@@ -263,6 +312,7 @@
 
 .order-comment {
   position: relative;
+  padding-top: 24px;
 }
 
 .order__form-label-comment {
@@ -270,6 +320,10 @@
   top: -20px;
   left: 0;
   color: getColor('PrimaryTitleColor');
+  @include desktop {
+    @include font(400, 18px, 20px);
+    top: 0;
+  }
 }
 
 .order-comment__comment-area {
@@ -280,6 +334,10 @@
   width: 288px;
   @include tablet {
     width: 590px;
+    min-height: 255px;
+  }
+  @include desktop {
+    height: 100%;
   }
 }
 
