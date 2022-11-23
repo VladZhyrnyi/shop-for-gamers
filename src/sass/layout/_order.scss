@@ -1,6 +1,32 @@
 .take-order-page {
   padding-top: 40px;
   padding-bottom: 48px;
+  background: getColor('BackgroundColor');
+  background-repeat: no-repeat;
+  background-image: url(../images/take-order/bg/bg-mob-1x.jpeg);
+  background-position-y: 68px center 0, 72px center 0;
+
+  @include phone {
+    background-image: url(../images/take-order/bg/bg-mob-1x.jpeg);
+    background-position-y: 68px, 72px;
+  }
+
+  @include tablet {
+    background-image: 
+    // url(../images/take-order/bg/line-desk-top.svg),
+    //   url(../images/take-order/bg/line-desk.svg),
+      url(../images/take-order/bg/bg-tab-1x.jpeg);
+    background-position-y: 186px, 194px;
+  }
+
+  @include desktop {
+    background-image: 
+    // url(../images/take-order/bg/line-desk-top.svg),
+    //   url(../images/take-order/bg/line-desk.svg),
+      url(../images/take-order/bg/bg-desk-1x.jpeg);
+    background-position-y: 186px, 194px;
+    // background-position-y: 288px, 296px;
+  }
 }
 
 .order__section {
@@ -14,34 +40,23 @@
   @include font($fw: 600);
   color: getColor('PrimaryTitleColor');
   padding-bottom: 35px;
-
-  @include tablet {
-    padding-bottom: 51px;
-    @include font(600, 56px, 66px);
+  background-repeat: no-repeat;
+  background-image: url(../images/take-order/bg/line-mob-top.svg),
+    url(../images/take-order/bg/line-mob.svg);
+  @include phone {
+    background-image: url(../images/take-order/bg/line-tab-top.svg),
+      url(../images/take-order/bg/line-tab.svg);
   }
+  @include tablet {
+    background-image: url(../images/take-order/bg/line-desk-top.svg),
+      url(../images/take-order/bg/line-desk.svg);
+  }
+
   @include desktop {
     padding-bottom: 75px;
   }
 }
 
-// .accessories__main {
-//   background: getColor('BackgroundColor');
-//   background-image: url(../images/accessories/bg/lineTop.svg),
-//     url(../images/accessories/bg/lineBottom.svg),
-//     url(../images/accessories/bg/bg-mob.jpg);
-//
-//   @include tablet {
-//     background-image: url(../images/accessories/bg/lineTabTop.svg),
-//       url(../images/accessories/bg/lineTabBottom.svg),
-//       url(../images/accessories/bg/bg-tab.jpg);
-//   }
-//
-//   @include desktop {
-//     background-image: url(../images/accessories/bg/lineTop.svg),
-//       url(../images/accessories/bg/lineBottom.svg),
-//       url(../images/accessories/bg/bg-desctop.jpg);
-//         background-position-y: 288px, 296px;
-//   }
 .order-product {
   @include desktop {
     display: none;
@@ -273,6 +288,24 @@
     @include font($fs: 18px);
   }
 }
+
+// summary {
+//   display: block;
+// }
+//
+//   summary::-webkit-details-marker {
+//   display: none;
+// }
+//
+// summary::before {
+//   content: '\25B6';
+//   padding-right: 0.5em;
+// }
+//
+// details[open] > summary::before {
+//   content: '\25BC';
+// }
+
 // details[open] {
 //   padding: 0.5em;
 // }
