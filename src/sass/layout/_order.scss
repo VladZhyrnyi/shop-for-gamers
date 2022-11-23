@@ -111,6 +111,17 @@
   max-width: 288px;
 }
 
+.order__contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.order__contact-input-wrapper {
+  width: 288px;
+}
+
 .order__form-field {
   position: relative;
   margin-bottom: 40px;
@@ -152,18 +163,71 @@
   color: getColor('PrimaryTitleColor');
   padding-left: 48px;
   outline: transparent;
-
-  //   transition: border 250ms $transition-timing-function;
-  //   &:focus {
-  //     border: 1px solid $accent-color;
-  //   }
-  //   .input-wrap:hover & {
-  //     border: 1px solid $accent-color;
-  //   }
 }
 
-// .order__user-comment {
+.order__form-field--color,
+.order__form-field--quantity,
+.order__form-field--payment {
+  border: none;
+  border-bottom: 1px solid getColor('SecondaryTitleColor');
+  //   padding: 4px 0 4px;
+}
+
+.order__color-summary,
+.order__quantity-summary,
+.order__payment-summary {
+  @include font($fs: 16px, $lh: 20px);
+  color: getColor('PrimaryTitleColor');
+  //   margin: -0.5em -0.5em 0;
+  //   padding: 0.5em;
+}
+// details[open] {
+//   padding: 0.5em;
 // }
+
+.order__form-field--color[open] .order__color-summary,
+.order__form-field--quantity[open] .order__quantity-summary,
+.order__form-field--payment[open] .order__payment-summary {
+  border-bottom: 1px solid getColor('SecondaryTitleColor');
+  //   margin-bottom: 0.5em;
+}
+.order__color-select,
+.order__quantity-select,
+.order__payment-select {
+  background-color: getColor('BackgroundColor');
+  border: none;
+}
+.order__color-option,
+.order__quantity-option,
+.order__payment-option {
+  width: 288px;
+  color: getColor('PrimaryTitleColor');
+  background-color: getColor('BackgroundColor');
+  &:nth-child(2n) {
+    background-color: #17573d;
+  }
+  &:first-child {
+    padding-top: 4px;
+  }
+}
+
+.order-comment {
+  position: relative;
+}
+
+.order__form-label-comment {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: getColor('PrimaryTitleColor');
+}
+
+.order-comment__comment-area {
+  background-color: getColor('BackgroundColor');
+  color: getColor('PrimaryTitleColor');
+  border: 1px solid getColor('SecondaryTitleColor');
+  width: 288px;
+}
 
 .order__buttons {
   display: flex;

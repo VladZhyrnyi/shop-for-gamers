@@ -292,79 +292,124 @@
   <section class="order-contact-form">
     <div class="container">
       <h2 class="order__section-contact-title">Contact us</h2>
-      <form action="" name="order__form" autocomplete="off" novalidate>
-        <div>
-          <div class="order__form-field">
-            <input
-              type="text"
-              class="order__form-input"
-              id="order__username"
-              name="order__username"
-              placeholder=" "
-            />
-            <label for="order__username" class="order__form-label">
-              Name
-            </label>
-          </div>
-          <div class="order__form-field">
-            <input
-              type="email"
-              class="order__form-input"
-              id="order__email"
-              name="order__email"
-              placeholder=" "
-            />
-            <label for="order__email" class="order__form-label"> Email </label>
-          </div>
+      <form
+        class="order__form"
+        action=""
+        name="order__form"
+        autocomplete="off"
+        novalidate
+      >
+        <div class="order__contact-container">
+          <div class="order__contact-input-wrapper">
+            <div class="order__form-field">
+              <input
+                type="text"
+                class="order__form-input"
+                id="order__username"
+                name="order__username"
+                placeholder=" "
+              />
+              <label for="order__username" class="order__form-label">
+                Name
+              </label>
+            </div>
+            <div class="order__form-field">
+              <input
+                type="email"
+                class="order__form-input"
+                id="order__email"
+                name="order__email"
+                placeholder=" "
+              />
+              <label for="order__email" class="order__form-label">
+                Email
+              </label>
+            </div>
 
-          <div class="order__form-field">
-            <label class="order__form-label" for="order__color"
+            <div class="order__form-field">
+              <!-- <label class="order__form-label" for="order__color"
               >Color Option</label
-            >
-            <select id="order__color" name="order__color" size="3">
-              <option value="k9d-black-orange">K9D Black Orange</option>
-              <option value="k9d-silver-gray">K9D Silver Gray</option>
-              <option value="k9u-white-blue" selected>K9U White Blue</option>
-            </select>
-          </div>
+            > -->
+              <details class="order__form-field--color">
+                <summary class="order__color-summary">Color Option</summary>
+                <select
+                  class="order__color-select"
+                  id="order__color"
+                  name="order__color"
+                  size="3"
+                >
+                  <option class="order__color-option" value="k9d-black-orange">
+                    K9D Black Orange
+                  </option>
+                  <option class="order__color-option" value="k9d-silver-gray">
+                    K9D Silver Gray
+                  </option>
+                  <option class="order__color-option" value="k9u-white-blue">
+                    K9U White Blue
+                  </option>
+                </select>
+              </details>
+            </div>
 
-          <div class="order__form-field">
-            <!-- <label>
+            <div class="order__form-field">
+              <!-- <label>
                 Quantity
                 <input type="number" name="order__quantity" min="0" />
               </label> -->
-            <label class="order__form-label" for="order__quantity"
-              >Quantity</label
-            >
-            <select id="order__quantity" name="order__quantity" size="3">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+              <details class="order__form-field--quantity">
+                <summary class="order__quantity-summary">Quantity</summary>
+                <select
+                  class="order__quantity-select"
+                  id="order__quantity"
+                  name="order__quantity"
+                  size="3"
+                >
+                  <option class="order__quantity-option" value="1">1</option>
+                  <option class="order__quantity-option" value="2">2</option>
+                  <option class="order__quantity-option" value="3">3</option>
+                  <option class="order__quantity-option" value="4">4</option>
+                  <option class="order__quantity-option" value="5">5</option>
+                </select>
+              </details>
+            </div>
+
+            <div class="order__form-field">
+              <details class="order__form-field--payment">
+                <summary class="order__payment-summary">Payment</summary>
+                <select
+                  class="order__payment-select"
+                  id="order__payment"
+                  name="order__payment"
+                  size="3"
+                >
+                  <option class="order__payment-option" value="privat24">
+                    Privat24
+                  </option>
+                  <option class="order__payment-option" value="monobank">
+                    Monobank
+                  </option>
+                  <option class="order__payment-option" value="paypal">
+                    PayPal
+                  </option>
+                </select>
+              </details>
+            </div>
           </div>
 
-          <div class="order__form-field">
-            <label class="order__form-label" for="order__payment"
-              >Payment</label
+          <div class="order-comment">
+            <label class="order__form-label-comment" for="order__user-comment">
+              Leave your message</label
             >
-            <select id="order__payment" name="order__payment">
-              <option value="privat24">Privat24</option>
-              <option value="monobank">Monobank</option>
-              <option value="paypal" selected>PayPal</option>
-            </select>
+            <textarea
+              class="order-comment__comment-area"
+              name="order__user-comment"
+              id="order__user-comment"
+              rows="5"
+              placeholder=" "
+            ></textarea>
           </div>
         </div>
-        <label class="order__form-label">
-          Leave your message
-          <textarea
-            class="order__user-comment"
-            name="order__user-comment"
-            rows="5"
-            placeholder=""
-          ></textarea>
-        </label>
+
         <div class="order__buttons">
           <button
             class="btn-primary order__button order__button--buy"
