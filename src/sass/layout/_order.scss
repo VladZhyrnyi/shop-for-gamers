@@ -63,7 +63,7 @@
   @include font(600, 32px, 38px);
   margin-bottom: 16px;
   @include tablet {
-    @include font(600, 56px, 66px);
+    @include font(600, 55px, 66px);
     margin-bottom: 24px;
   }
   @include desktop {
@@ -172,9 +172,11 @@
   margin-bottom: 16px;
   @include tablet {
     @include font($fs: 36px, $lh: 42px);
+    margin-left: 48px;
   }
   @include desktop {
     margin-bottom: 48px;
+    margin-left: 0;
   }
 }
 .order__form {
@@ -320,7 +322,8 @@
   top: -20px;
   left: 0;
   color: getColor('PrimaryTitleColor');
-  @include desktop {
+
+  @include tablet {
     @include font(400, 18px, 20px);
     top: 0;
   }
@@ -355,8 +358,8 @@
   }
 }
 
-.order__button.btn-primary,
-.order__button.btn-secondary {
+.order__button .btn-primary,
+.order__button .btn-secondary {
   max-width: 173px;
   font-weight: 700;
   font-size: 16px;
