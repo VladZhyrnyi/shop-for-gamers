@@ -1,114 +1,92 @@
-.hero__section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding-top: 284px;
-  padding-bottom: 127px;
-  background-color: #01383a;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:contain;
-  text-align: center;
-  background-blend-mode: luminosity;
-  background-image:
-  url(/src/images/hero-images/frame-mob-1x.png); 
-  
-  @include retina {
-    background-image: 
-    url(/src/images/hero-images/frame-mob-2x.png);
-  }
-  
-  @include tablet {
-  padding: 290 0 208 0;
-  background-position: 319px 169px;
-  background-size: 379px 616px;
-
-  background-image:
-     url(/src/images/hero-images/frame-tab-1x.png);
-
-  @include retina {
-    background-image:
-    url(/src/images/hero-images/frame-tab-2x.png);
+.hero {
+  background-color: getColor('BackgroundColor');
 }
-  }
 
-  @include desktop {
-  padding: 180 0 209 0;
-  background-position: 534px 1px;
-  background-size: 611px 573px;
-
-
-  background-image:
-  url(/src/images/hero-images/frame-desk-1x.png);
-
-  @include retina {
-   background-image:
-   url(/src/images/hero-images/frame-desk-2x.png);
-  }
-  }
-}
-.hero__box {
-  position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  background-image:
-   url(/src/images/hero-images/hero-overlay-1x.png);
+.hero__container {
+  padding-top: 185px;
+  padding-bottom: 125px;
+  background-image: url(../images/hero-images/hero-main-bg.png),
+    url(../images/hero-images/hero-mob-bg-tech.png);
+  // background-size: contain, contain;
+  background-position: top -60px right -100px, top -50px right 0;
+  background-repeat: no-repeat, no-repeat;
+  mix-blend-mode: luminosity;
 
   @include retina {
-    background-image:
-    url(/src/images/hero-images/hero-overlay-2x.png);
+    background-image: url(../images/hero-images/hero-main-bg@2x.png),
+      url(../images/hero-images/hero-mob-bg-tech@2x.png);
   }
 
   @include tablet {
-  background-image: 
-  url(/src/images/hero-images/hero-overlay-1x.png),
-  url(/src/images/hero-images/hero-overlay-2x.png);
-background-repeat: no-repeat;
-background-size: 1100px;
-background-position: top -50px left -250px;
+    padding-top: 290px;
+    padding-bottom: 210px;
+
+    background-image: url(../images/hero-images/hero-main-bg.png),
+      url(../images/hero-images/hero-tab-bg-tech.png);
+    // background-size: contain, contain;
+    background-position: bottom 0, top 0 right 0;
+
+    @include retina {
+      background-image: url(../images/hero-images/hero-main-bg@2x.png),
+        url(../images/hero-images/hero-tab-bg-tech@2x.png);
+    }
   }
 
   @include desktop {
-    background-image: 
-  url(/src/images/hero-images/hero-overlay-1x.png),
-  url(/src/images/hero-images/hero-overlay-2x.png);
-background-repeat: no-repeat;
-background-size: 1300px;
-background-position: top -160px left -50%;
+    padding-top: 315px;
+
+    background-image: url(../images/hero-images/hero-main-bg.png),
+      url(../images/hero-images/hero-desk-bg-tech.png);
+    // background-size: contain, contain;
+    background-position: bottom 0, top 0 right 0;
+
+    @include retina {
+      background-image: url(../images/hero-images/hero-main-bg@2x.png),
+        url(../images/hero-images/hero-desk-bg-tech@2x.png);
+    }
   }
 }
-
 
 .hero__title {
+  display: block;
   max-width: 247px;
-  margin: 0 37 25 37;
-  font-weight: 600;
+  margin: 0 auto;
+  font-weight: 500;
   font-size: 32px;
-  line-height: 1.19;
+  line-height: calc(38 / 32);
   text-align: center;
-  color: #ffffff;
+
+  color: getColor('PrimaryTitleColor');
 
   @include tablet {
     max-width: 388px;
-    margin-left: 40px;
+    margin-left: 0;
+
     font-size: 56px;
-    line-height: 1.18;
-    text-align:start;
-    margin-bottom: 94px;
+    line-height: calc(66 / 56);
+    text-align: left;
   }
 
   @include desktop {
-    max-width: 515px;
-    margin: 0 623 94 142;
+    max-width: 515;
     font-size: 64px;
-    line-height: 1.17;
-    text-align:start;
+    line-height: calc(75 / 64);
   }
 }
 
 .hero__button {
-  background-color: #86e543;
-  @include tablet {}
+  display: flex;
+  width: 173px;
+  height: 51px;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  @include tablet {
+    margin: 0;
+    margin-top: 94px;
+  }
+
+  @include desktop {
+    margin-top: 40px;
+  }
 }
