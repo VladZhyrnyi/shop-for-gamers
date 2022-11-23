@@ -20,7 +20,7 @@
     background-image: url(../images/accessories/bg/bg-tab-3x.jpg);
     background-position-x: -100px;
     background-position-y: -225px;
-  } 
+  }
 
   @include desktop {
     background-image: url(../images/accessories/bg/bg-desctop.jpg);
@@ -159,9 +159,8 @@
 }
 
 .descktopHidden {
-
   @media screen and (min-width: 1279px) {
-display: none;
+    display: none;
   }
 }
 
@@ -366,9 +365,6 @@ display: none;
 
 .accessor__swiper-pagination {
   position: static;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
 }
 
 // .swiper-pagination-bullet {
