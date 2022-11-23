@@ -7,6 +7,8 @@ const swiper = new Swiper('.swiper', {
 
   pagination: {
     el: '.swiper-pagination',
+    // Добавил кликабельность для аксессуаров
+    clickable: true,
   },
 
   autoplay: {
