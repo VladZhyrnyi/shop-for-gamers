@@ -3,8 +3,8 @@
     <div class="container">
       <h2 class="order__section-title">Take order</h2>
       <div class="order-product">
+        <h3 class="order-product__title">Xiberia K9 PRO PC Headset</h3>
         <div class="order-product__container">
-          <h3 class="order-product__title">Xiberia K9 PRO PC Headset</h3>
           <picture class="order-product__main-picture">
             <source
               type="image/avif"
@@ -57,16 +57,20 @@
               sizes="(min-width: 1280px) 30vw, (min-width: 768px) 50vw, 100vw"
             />
           </picture>
-        </div>
 
-        <ul class="order-price">
-          <li class="order-price--first-price">
-            65.14<span class="price__currency">USD</span>
-          </li>
-          <li class="order-price--second-price">
-            55.14<span class="price__currency">USD</span>
-          </li>
-        </ul>
+          <ul class="order-price">
+            <li class="order-price--first-price">
+              65.14<span class="price__currency price__currency--first-price"
+                >USD</span
+              >
+            </li>
+            <li class="order-price--second-price">
+              55.14<span class="price__currency price__currency--second-price"
+                >USD</span
+              >
+            </li>
+          </ul>
+        </div>
         <ul class="order-product__img-list">
           <li class="order-product__img-item">
             <picture>
@@ -331,20 +335,20 @@
               >Color Option</label
             > -->
               <details class="order__form-field--color">
-                <summary class="order__color-summary">Color Option</summary>
+                <summary class="order__summary">Color Option</summary>
                 <select
-                  class="order__color-select"
+                  class="order__select"
                   id="order__color"
                   name="order__color"
                   size="3"
                 >
-                  <option class="order__color-option" value="k9d-black-orange">
+                  <option class="order__option" value="k9d-black-orange">
                     K9D Black Orange
                   </option>
-                  <option class="order__color-option" value="k9d-silver-gray">
+                  <option class="order__option" value="k9d-silver-gray">
                     K9D Silver Gray
                   </option>
-                  <option class="order__color-option" value="k9u-white-blue">
+                  <option class="order__option" value="k9u-white-blue">
                     K9U White Blue
                   </option>
                 </select>
@@ -357,40 +361,38 @@
                 <input type="number" name="order__quantity" min="0" />
               </label> -->
               <details class="order__form-field--quantity">
-                <summary class="order__quantity-summary">Quantity</summary>
+                <summary class="order__summary">Quantity</summary>
                 <select
-                  class="order__quantity-select"
+                  class="order__select"
                   id="order__quantity"
                   name="order__quantity"
                   size="3"
                 >
-                  <option class="order__quantity-option" value="1">1</option>
-                  <option class="order__quantity-option" value="2">2</option>
-                  <option class="order__quantity-option" value="3">3</option>
-                  <option class="order__quantity-option" value="4">4</option>
-                  <option class="order__quantity-option" value="5">5</option>
+                  <option class="order__option" value="1">1</option>
+                  <option class="order__option" value="2">2</option>
+                  <option class="order__option" value="3">3</option>
+                  <option class="order__option" value="4">4</option>
+                  <option class="order__option" value="5">5</option>
                 </select>
               </details>
             </div>
 
             <div class="order__form-field">
               <details class="order__form-field--payment">
-                <summary class="order__payment-summary">Payment</summary>
+                <summary class="order__summary">Payment</summary>
                 <select
-                  class="order__payment-select"
+                  class="order__select"
                   id="order__payment"
                   name="order__payment"
                   size="3"
                 >
-                  <option class="order__payment-option" value="privat24">
+                  <option class="order__option" value="privat24">
                     Privat24
                   </option>
-                  <option class="order__payment-option" value="monobank">
+                  <option class="order__option" value="monobank">
                     Monobank
                   </option>
-                  <option class="order__payment-option" value="paypal">
-                    PayPal
-                  </option>
+                  <option class="order__option" value="paypal">PayPal</option>
                 </select>
               </details>
             </div>

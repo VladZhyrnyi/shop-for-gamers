@@ -5,6 +5,9 @@
 
 .order__section {
   margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 48px;
+  }
 }
 
 .order__section-title {
@@ -41,12 +44,24 @@
   margin-bottom: 16px;
   @include tablet {
     @include font(600, 56px, 66px);
+    margin-bottom: 24px;
+  }
+}
+
+.order-product__container {
+  @include tablet {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 24px;
   }
 }
 
 .order-product__main-picture {
   display: block;
   margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .order-price {
@@ -54,6 +69,12 @@
   height: 40px;
   width: 100%;
   margin-bottom: 16px;
+  @include tablet {
+    height: 346px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
 }
 .order-price--first-price {
   text-decoration-line: line-through;
@@ -63,14 +84,24 @@
   top: 0;
   left: 0;
   @include tablet {
-    @include font();
+    top: 72px;
+    @include font($fs: 24px, $lh: 24px);
   }
-  //   font-weight: 600;
-  //   font-size: 24px;
-  //   line-height: 1;
 }
 .order-price__currency {
   text-transform: uppercase;
+  &--first-price {
+    margin-left: 5px;
+    @include tablet {
+      margin-left: 8px;
+    }
+  }
+  &--second-price {
+    margin-left: 10px;
+    @include tablet {
+      margin-left: 16px;
+    }
+  }
 }
 .order-price--second-price {
   color: getColor('SecondaryTitleColor');
@@ -78,9 +109,10 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  //     font-weight: 600;
-  // font-size: 48px;
-  // line-height: 1;
+  @include tablet {
+    position: relative;
+    @include font($fs: 48px, $lh: 48px);
+  }
 }
 .order-product__img-list {
   display: flex;
@@ -109,6 +141,10 @@
 }
 .order__form {
   max-width: 288px;
+  @include tablet {
+    max-width: 590px;
+    margin: 0 auto;
+  }
 }
 
 .order__contact-container {
@@ -120,6 +156,9 @@
 
 .order__contact-input-wrapper {
   width: 288px;
+  @include tablet {
+    width: 590px;
+  }
 }
 
 .order__form-field {
@@ -140,8 +179,9 @@
   text-transform: capitalize;
   padding-bottom: 4px;
   transition: transform 250ms ease-in-out, color 250ms ease-in-out;
-  //   @include tablet {
-  //   }
+  @include tablet {
+    @include font($fs: 18px);
+  }
   .order__form-input:focus + &,
   .order__form-input:not(:placeholder-shown) + & {
     transform: translateY(-32px);
@@ -173,39 +213,49 @@
   //   padding: 4px 0 4px;
 }
 
-.order__color-summary,
-.order__quantity-summary,
-.order__payment-summary {
+.order__summary {
   @include font($fs: 16px, $lh: 20px);
   color: getColor('PrimaryTitleColor');
   //   margin: -0.5em -0.5em 0;
   //   padding: 0.5em;
+  @include tablet {
+    @include font($fs: 18px);
+  }
 }
 // details[open] {
 //   padding: 0.5em;
 // }
 
-.order__form-field--color[open] .order__color-summary,
-.order__form-field--quantity[open] .order__quantity-summary,
-.order__form-field--payment[open] .order__payment-summary {
+.order__form-field--color[open] .order__summary,
+.order__form-field--quantity[open] .order__summary,
+.order__form-field--payment[open] .order__summary {
   border-bottom: 1px solid getColor('SecondaryTitleColor');
   //   margin-bottom: 0.5em;
 }
-.order__color-select,
-.order__quantity-select,
-.order__payment-select {
+
+.order__select {
   background-color: getColor('BackgroundColor');
   border: none;
+  &:hover,
+  &:focus {
+    outline: transparent;
+  }
 }
-.order__color-option,
-.order__quantity-option,
-.order__payment-option {
+
+.order__option {
   width: 288px;
+  @include tablet {
+    width: 590px;
+  }
   color: getColor('PrimaryTitleColor');
   background-color: getColor('BackgroundColor');
-  &:nth-child(2n) {
-    background-color: #17573d;
-  }
+  //   .order__select:hover &,
+  //   .order__select:focus & {
+  //     background-color: #17573d;
+  //   }
+  //   &:nth-child(2n) {
+  //     background-color: #17573d;
+  //   }
   &:first-child {
     padding-top: 4px;
   }
@@ -223,20 +273,27 @@
 }
 
 .order-comment__comment-area {
+  resize: none;
   background-color: getColor('BackgroundColor');
   color: getColor('PrimaryTitleColor');
   border: 1px solid getColor('SecondaryTitleColor');
   width: 288px;
+  @include tablet {
+    width: 590px;
+  }
 }
 
 .order__buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
   @include tablet {
-    flex-wrap: nowrap;
     gap: 20px;
+  }
+  @include desktop {
+    flex-wrap: nowrap;
   }
 }
 
