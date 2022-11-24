@@ -443,7 +443,7 @@
 .order__btn-secondary {
   color: getColor('SecondaryTitleColor');
   background-color: getColor('BackgroundColor');
-  border: 1px solid gigetColor('SecondaryTitleColor');
+  border: 1px solid getColor('SecondaryTitleColor');
   &:hover,
   &:focus {
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
