@@ -3,14 +3,17 @@
 }
 
 .hero__container {
-  padding-top: 185px;
-  padding-bottom: 125px;
+  padding-top: 180px;
+  padding-bottom: 203px;
   background-image: url(../images/hero-images/hero-main-bg.png),
     url(../images/hero-images/hero-mob-bg-tech.png);
-  // background-size: contain, contain;
-  background-position: top -60px right -100px, top -50px right 0;
   background-repeat: no-repeat, no-repeat;
-  mix-blend-mode: luminosity;
+  background-size: 300%, contain;
+  background-position: top, top;
+  background-position-y: -100px, 0;
+  background-position-x: -500px, 0;
+  
+  opacity: 0.25;
 
   @include retina {
     background-image: url(../images/hero-images/hero-main-bg@2x.png),
@@ -18,13 +21,14 @@
   }
 
   @include tablet {
-    padding-top: 290px;
-    padding-bottom: 210px;
+    padding-top: 154px;
+    padding-bottom: 208px;
 
     background-image: url(../images/hero-images/hero-main-bg.png),
       url(../images/hero-images/hero-tab-bg-tech.png);
-    // background-size: contain, contain;
-    background-position: bottom 0, top 0 right 0;
+    background-size: 140%, 379px 645px;
+    background-position: top, top right;
+    background-position-y: -60px, 0;
 
     @include retina {
       background-image: url(../images/hero-images/hero-main-bg@2x.png),
@@ -33,12 +37,14 @@
   }
 
   @include desktop {
-    padding-top: 315px;
+    padding-top: 180px;
+    padding-bottom: 209px;
 
     background-image: url(../images/hero-images/hero-main-bg.png),
       url(../images/hero-images/hero-desk-bg-tech.png);
-    // background-size: contain, contain;
-    background-position: bottom 0, top 0 right 0;
+    background-size: 100%, 746px 649px;
+    background-position: top, top right;
+    background-position-y: -136px, 0;
 
     @include retina {
       background-image: url(../images/hero-images/hero-main-bg@2x.png),
@@ -68,6 +74,7 @@
   }
 
   @include desktop {
+    margin-left: 102px;
     max-width: 515;
     font-size: 64px;
     line-height: calc(75 / 64);
@@ -86,5 +93,6 @@
 
   @include desktop {
     margin-top: 40px;
+    margin-left: 102px;
   }
 }
