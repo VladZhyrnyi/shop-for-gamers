@@ -1,5 +1,21 @@
 .banners {
-  padding: 120px 0;
+  padding: 0 0 48px 0;
+
+  @include tablet {
+    padding: 120px 0;
+    background-image: url(../images/banners/banners-tab-rock.svg);
+    background-position: left calc(50vw + 75px) top 14px;
+    background-repeat: no-repeat;
+  }
+
+  @include desktop {
+    background-image: url(../images/banners/banners-bg-desk.png);
+    background-size: contain;
+
+    @include retina {
+      background-image: url(../images/banners/banners-bg-desk@2x.png);
+    }
+  }
 }
 
 .banners__container {
@@ -10,7 +26,7 @@
   width: 320px;
   height: 545px;
 
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
   @include tablet {
     width: 768px;
