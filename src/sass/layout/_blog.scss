@@ -1,14 +1,22 @@
 .blog {
-  margin: 0 auto;
-  background-color: #01383a;
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.blog__container {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+
   background-image: url(../images/blog/Vector-mob.svg),
     url(../images/blog/Vector-2-mob.svg);
-  background-position-y: 46px, 51px;
+  background-position-y: 6px, 11px;
   background-repeat: no-repeat;
-
-  // background-position: top;
-  // background-size: cover;
-  //  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -24,18 +32,12 @@
       url(../images/blog/Vector-2-mob.svg);
   }
 
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-  }
-
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    // min-height: 2442px;
     background-image: url(../images/blog/Vector-tab.svg),
       url(../images/blog/Vector-2-tab.svg),
       url(../images/blog/background-tab.jpg);
 
-    background-position-y: 164px, 169px, -137px;
+    background-position-y: 44px, 49px, 0px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -43,14 +45,6 @@
       background-image: url(../images/blog/Vector-tab.svg),
         url(../images/blog/Vector-2-tab.svg),
         url(../images/blog/background-tab-2x.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(../images/blog/Vector-tab.svg),
-        url(../images/blog/Vector-2-tab.svg),
-        url(../images/blog/background-tab-3x.jpg);
     }
   }
 
@@ -60,7 +54,7 @@
     background-image: url(../images/blog/Vector.svg),
       url(../images/blog/Vector-2.svg), url(../images/blog/background.jpg);
 
-    background-position-y: 164px, 169px, -51px;
+    background-position-y: 44px, 49px, 0px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -68,27 +62,6 @@
       background-image: url(../images/blog/Vector.svg),
         url(../images/blog/Vector-2.svg), url(../images/blog/background-2x.jpg);
     }
-
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(../images/blog/Vector.svg),
-        url(../images/blog/Vector-2.svg), url(../images/blog/background-3x.jpg);
-    }
-  }
-}
-
-.blog__container {
-  @media screen and (max-width: 767px) {
-    padding: 0;
-  }
-
-  padding-top: 40px;
-  padding-bottom: 48px;
-
-  @include tablet {
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 }
 
