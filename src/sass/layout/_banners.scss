@@ -11,6 +11,7 @@
   @include desktop {
     background-image: url(../images/banners/banners-bg-desk.png);
     background-size: contain;
+    background-position: bottom;
 
     @include retina {
       background-image: url(../images/banners/banners-bg-desk@2x.png);
@@ -40,9 +41,7 @@
 
 .banner-image__wrapper {
   position: relative;
-  //   height: 503px;
-  //   width: 1280px;
-  //   overflow: hidden;
+
 }
 
 .banner-image__text {
