@@ -233,8 +233,8 @@ $bg-color: #004225;
 }
 
 .contact-form__btn {
-  margin-top: 32px;
   margin: 0 auto;
+  margin-top: 24px;
   display: flex;
   @include desktop {
     margin: 0;
