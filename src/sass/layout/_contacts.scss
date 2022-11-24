@@ -73,8 +73,9 @@ $bg-color: #004225;
 }
 
 .contact-section__picture {
-  display: block;
+  display: flex;
   margin-bottom: 16px;
+  justify-content: center;
 
   @include tablet {
     margin-bottom: 32px;
@@ -86,7 +87,7 @@ $bg-color: #004225;
 }
 
 .contact-section__text {
-  @include font(400, 16px, 19px);
+  @include font(400, 14px, 19px);
   font-style: normal;
   color: getColor('PrimaryTitleColor');
   margin-bottom: 24px;
