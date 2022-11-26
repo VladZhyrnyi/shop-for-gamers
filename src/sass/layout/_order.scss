@@ -282,9 +282,7 @@
   outline: transparent;
 }
 
-.order__form-field--color,
-.order__form-field--quantity,
-.order__form-field--payment {
+.order__details[open] {
   border: none;
   border-bottom: 1px solid getColor('SecondaryTitleColor');
   //   padding: 4px 0 4px;
@@ -321,9 +319,7 @@
 //   padding: 0.5em;
 // }
 
-.order__form-field--color[open] .order__summary,
-.order__form-field--quantity[open] .order__summary,
-.order__form-field--payment[open] .order__summary {
+.order__details[open] .order__summary {
   border-bottom: 1px solid getColor('SecondaryTitleColor');
   //   margin-bottom: 0.5em;
 }
@@ -374,6 +370,7 @@
 
 .order-comment__comment-area {
   resize: none;
+  padding: 20px;
   background-color: getColor('BackgroundColor');
   color: getColor('PrimaryTitleColor');
   border: 1px solid getColor('SecondaryTitleColor');
@@ -381,6 +378,7 @@
   @include tablet {
     width: 590px;
     min-height: 255px;
+    padding: 24px;
   }
   @include desktop {
     height: 100%;
