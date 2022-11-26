@@ -1,8 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/animate.css/animate.min.css';
+@import '~node_modules/swiper/swiper-bundle.min.css';
 @import './vars';
 @import './reset-styles';
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: getColor('BackgroundColor');
+  font-family: 'Roboto', sans-serif;
+  background-color: getColor('BackgroundColor');
 }
