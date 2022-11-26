@@ -3,6 +3,8 @@
 }
 
 .sale__container {
+  margin: 0 auto;
+
   background-image: url(../images/sale/bg-mob.jpg);
   background-position: top;
 
@@ -29,28 +31,16 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/sale/bg-tab-2x.jpg');
     }
-    @media (min-device-pixel-ratio: 3),
-      (-webkit-min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      background-image: url('../images/sale/bg-tab-3x.jpg');
-    }
   }
 
   @include desktop {
     background-image: url('../images/sale/bg.jpg');
 
-     @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/sale/bg-2x.jpg');
-    }
-    @media (min-device-pixel-ratio: 3),
-      (-webkit-min-device-pixel-ratio: 3),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/sale/bg-3x.jpg');
     }
   }
 }
@@ -63,18 +53,16 @@
   background-position-y: 0px, 3px;
 
   @media screen and (min-width: 768px) {
-
     background-image: url('../images/sale/top-tablet.svg'),
       url('../images/sale/bottom-tablet.svg');
 
     background-position-y: 46px, 54px;
   }
-  
-  @media screen and (min-width: 1280px) {
 
+  @media screen and (min-width: 1280px) {
     background-image: url('../images/sale/top.svg'),
       url('../images/sale/bottom.svg');
-   
+
     // background-position: top 46px left 0, top 54px left 0, center;
     background-position-y: 46px, 54px, -10px;
     background-position-x: 0, 0, -70px;
@@ -82,14 +70,14 @@
 }
 .sale__title {
   margin-bottom: 35px;
-  padding-left: 64px;
+  margin-left: 24px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: calc(28 / 24);
   color: getColor('PrimaryTitleColor');
   @media screen and (min-width: 768px) {
-    padding-left: 62px;
+    margin-left: 62px;
     font-size: 56px;
     line-height: calc(66 / 56);
   }
@@ -115,101 +103,14 @@
   }
   @media screen and (min-width: 1280px) {
     row-gap: 24px;
-    column-gap: 20px;
+    column-gap: 16px;
   }
 }
 
-.link__title,
-.sale__text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: calc(26 / 22);
-  color: getColor('SecondaryTitleColor');
-  @media screen and (max-width: 319px) {
-    font-size: 7vw;
-  }
-}
-.sale__text {
-  margin-top: 8px;
-}
-.sale__thumb {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-}
 .sale__item {
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 38px) / 2);
-  }
-  @media screen and (min-width: 1280px) {
-    width: calc((100% - 60px) / 4);
-  }
+  width: 288px
 }
-.sale-tab {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-}
-.sale__inform {
-  margin-top: 8px;
-  padding: 0 16px 20px 8px;
-}
-.sale__cost {
-  margin-top: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.cost__prise {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
-  text-decoration-line: line-through;
-  color: getColor('TextGreyColor');
-  @media screen and (max-width: 319px) {
-    font-size: 4vw;
-  }
-}
-.cost__sale {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  color: getColor('SecondaryTitleColor');
-  @media screen and (max-width: 319px) {
-    font-size: 6vw;
-  }
-}
-.sale__overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 16px 16px 52px 16px;
 
-  transform: translateY(101%);
-  transition: transform 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
-
-  color: getColor('PrimaryTitleColor');
-  background-color: getColor('BackgroundColor');
-
-  font-family: inherit;
-  margin: 0;
-  @include font(400, 14px, 16px);
-
-  border: 1px solid #86e543;
-  box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
-  border-radius: 12px;
-  .sale__link:hover &,
-  .sale__link:focus & {
-    transform: translateY(0);
-  }
-}
 .sale__btn {
   font-family: 'Roboto';
   font-style: normal;
