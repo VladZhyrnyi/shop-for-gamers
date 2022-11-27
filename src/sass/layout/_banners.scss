@@ -24,18 +24,14 @@
 }
 
 .banners__swiper {
-  width: 320px;
-  height: 545px;
+  max-width: 1280px;
+  margin: 0 auto;
+  // height: 545px;
 
   padding-bottom: 40px;
 
-  @include tablet {
-    width: 768px;
-  }
-
   @include desktop {
-    width: 1280px;
-    height: 550px;
+    // height: 550px;
   }
 }
 
@@ -60,7 +56,7 @@
   background-clip: text;
   color: transparent;
 
-  @include tablet {
+  @media screen and (min-width: 321px) {
     display: block;
   }
 
