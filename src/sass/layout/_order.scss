@@ -366,6 +366,13 @@
   }
 }
 
+.order__option-link:hover,
+.order__option-link:focus {
+  display: block;
+  background-color: #17573d;
+  width: 100%;
+}
+
 .order-comment {
   position: relative;
   padding-top: 24px;
