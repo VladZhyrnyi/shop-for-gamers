@@ -1,5 +1,9 @@
 .hero {
   background-color: getColor('BackgroundColor');
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .hero__container {
