@@ -280,9 +280,8 @@ body {
 
 .product-card__footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  flex-grow: auto;
   padding: 10px;
   font-weight: 600;
   font-size: 22px;
@@ -299,6 +298,13 @@ body {
   width: 100%;
   margin-bottom: 10px;
   color: rgba(134, 229, 67, 0.75);
+}
+
+.product-card__prices {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-card__old-price {
@@ -397,6 +403,11 @@ body {
 
 .hero {
   background-color: #01383a;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    text-align: center;
+  }
 }
 
 .hero__container {
@@ -524,22 +535,10 @@ body {
 }
 
 .banners__swiper {
-  width: 320px;
-  height: 545px;
+  max-width: 1280px;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
-  .banners__swiper {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .banners__swiper {
-    width: 1280px;
-    height: 550px;
-  }
-}
-
 .banner-image__wrapper {
   position: relative;
 }
@@ -555,15 +554,21 @@ body {
           background-clip: text;
   color: transparent;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 321px) {
   .banner-image__text {
     display: block;
   }
 }
 .banner-image__text--first {
   max-width: 590px;
-  left: 345px;
+  left: 49px;
   bottom: 49px;
+}
+@media screen and (min-width: 1280px) {
+  .banner-image__text--first {
+    left: 345px;
+    bottom: 49px;
+  }
 }
 .banner-image__text--second {
   max-width: 596px;
@@ -682,6 +687,7 @@ body {
 
 .sale__item {
   width: 288px;
+  align-items: stretch;
 }
 
 .sale__btn {
@@ -1749,6 +1755,14 @@ body {
 .order__option:first-child {
   padding-top: 4px;
 }
+.order__option:hover, .order__option:focus {
+  background-color: #17573d;
+}
+
+.order__option-link:hover,
+.order__option-link:focus {
+  background-color: #17573d;
+}
 
 .order-comment {
   position: relative;
@@ -2440,6 +2454,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 48px;
+  margin-bottom: 2px;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .slider {
@@ -2460,7 +2475,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .blog-article {
-    padding: 120px;
+    padding: 120px 0;
   }
 }
 
@@ -2577,7 +2592,7 @@ body {
     justify-content: flex-end;
     align-items: start;
     order: -1;
-    gap: 60px;
+    gap: 96px;
     width: 100%;
     margin-left: auto;
   }
@@ -2620,6 +2635,7 @@ body {
 @media screen and (min-width: 1280px) {
   .b-article__top-text {
     width: 690px;
+    margin-top: 0;
     margin-left: auto;
   }
 }

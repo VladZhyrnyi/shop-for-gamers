@@ -365,9 +365,15 @@
     padding-top: 4px;
   }
 
-  &:hover, &:focus {
-    background-color: #17573D;
+  &:hover,
+  &:focus {
+    background-color: #17573d;
   }
+}
+
+.order__option-link:hover,
+.order__option-link:focus {
+  background-color: #17573d;
 }
 
 .order-comment {
