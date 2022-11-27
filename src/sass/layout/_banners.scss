@@ -41,7 +41,6 @@
 
 .banner-image__wrapper {
   position: relative;
-
 }
 
 .banner-image__text {
@@ -61,14 +60,19 @@
   background-clip: text;
   color: transparent;
 
-  @include desktop {
+  @include tablet {
     display: block;
   }
 
   &--first {
     max-width: 590px;
-    left: 345px;
+    left: 49px;
     bottom: 49px;
+
+    @include desktop {
+      left: 345px;
+      bottom: 49px;
+    }
   }
 
   &--second {
