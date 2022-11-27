@@ -255,13 +255,19 @@
   @include font($fs: 16px, $lh: 20px);
   text-transform: capitalize;
   padding-bottom: 4px;
-  transition: transform 250ms ease-in-out, color 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, color 250ms ease-in-out,
+    font-size 250ms ease-in-out, color 50ms ease-in-out;
   @include tablet {
     @include font($fs: 18px);
   }
+
   .order__form-input:focus + &,
   .order__form-input:not(:placeholder-shown) + & {
+    font-size: 14px;
     transform: translateY(-32px);
+    @include desktop {
+      transform: translateY(-44px);
+    }
     color: getColor('TextGreyColor');
   }
 }
@@ -276,9 +282,16 @@
   background-color: getColor('BackgroundColor');
   border: none;
   border-bottom: 1px solid getColor('SecondaryTitleColor');
-  font-size: 20px;
+  font-size: 16px;
   color: getColor('PrimaryTitleColor');
-  padding-left: 48px;
+  padding-left: 50px;
+  @include tablet {
+    padding-left: 60px;
+    font-size: 18px;
+  }
+  @include desktop {
+    padding-left: 0;
+  }
   outline: transparent;
 }
 
@@ -372,6 +385,7 @@
 .order-comment__comment-area {
   resize: none;
   padding: 20px;
+  font-size: 16px;
   background-color: getColor('BackgroundColor');
   color: getColor('PrimaryTitleColor');
   border: 1px solid getColor('SecondaryTitleColor');
@@ -381,6 +395,7 @@
     width: 590px;
     min-height: 255px;
     padding: 24px;
+    font-size: 18px;
   }
   @include desktop {
     height: 100%;

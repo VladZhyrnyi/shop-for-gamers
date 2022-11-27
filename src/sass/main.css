@@ -1633,7 +1633,7 @@ body {
   line-height: 1.25;
   text-transform: capitalize;
   padding-bottom: 4px;
-  transition: transform 250ms ease-in-out, color 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, color 250ms ease-in-out, font-size 250ms ease-in-out, color 50ms ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .order__form-label {
@@ -1643,16 +1643,30 @@ body {
   }
 }
 .order__form-input:not(:-moz-placeholder-shown) + .order__form-label {
+  font-size: 14px;
   transform: translateY(-32px);
   color: #8d9289;
 }
 .order__form-input:not(:-ms-input-placeholder) + .order__form-label {
+  font-size: 14px;
   transform: translateY(-32px);
   color: #8d9289;
 }
 .order__form-input:focus + .order__form-label, .order__form-input:not(:placeholder-shown) + .order__form-label {
+  font-size: 14px;
   transform: translateY(-32px);
   color: #8d9289;
+}
+@media screen and (min-width: 1280px) {
+  .order__form-input:not(:-moz-placeholder-shown) + .order__form-label {
+    transform: translateY(-44px);
+  }
+  .order__form-input:not(:-ms-input-placeholder) + .order__form-label {
+    transform: translateY(-44px);
+  }
+  .order__form-input:focus + .order__form-label, .order__form-input:not(:placeholder-shown) + .order__form-label {
+    transform: translateY(-44px);
+  }
 }
 
 .order__form-input:-moz-placeholder-shown {
@@ -1673,10 +1687,21 @@ body {
   background-color: #01383a;
   border: none;
   border-bottom: 1px solid #86e543;
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
-  padding-left: 48px;
+  padding-left: 50px;
   outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .order__form-input {
+    padding-left: 60px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .order__form-input {
+    padding-left: 0;
+  }
 }
 
 .order__details[open] {
@@ -1747,6 +1772,7 @@ body {
 .order-comment__comment-area {
   resize: none;
   padding: 20px;
+  font-size: 16px;
   background-color: #01383a;
   color: #ffffff;
   border: 1px solid #86e543;
@@ -1758,6 +1784,7 @@ body {
     width: 590px;
     min-height: 255px;
     padding: 24px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1280px) {
