@@ -364,6 +364,10 @@
   &:first-child {
     padding-top: 4px;
   }
+
+  &:hover, &:focus {
+    background-color: #17573D;
+  }
 }
 
 .order-comment {
