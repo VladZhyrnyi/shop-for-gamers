@@ -291,6 +291,7 @@
 .order__summary {
   @include font($fs: 16px, $lh: 20px);
   color: getColor('PrimaryTitleColor');
+  border-bottom: 1px solid getColor('SecondaryTitleColor');
   //   margin: -0.5em -0.5em 0;
   //   padding: 0.5em;
   @include tablet {
@@ -374,6 +375,7 @@
   background-color: getColor('BackgroundColor');
   color: getColor('PrimaryTitleColor');
   border: 1px solid getColor('SecondaryTitleColor');
+  outline: transparent;
   width: 288px;
   @include tablet {
     width: 590px;
@@ -382,6 +384,11 @@
   }
   @include desktop {
     height: 100%;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid getColor('SecondaryTitleColor');
+    outline: transparent;
   }
 }
 
