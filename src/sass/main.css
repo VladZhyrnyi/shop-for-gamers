@@ -1755,14 +1755,6 @@ body {
 .order__option:first-child {
   padding-top: 4px;
 }
-.order__option:hover, .order__option:focus {
-  background-color: #17573d;
-}
-
-.order__option-link:hover,
-.order__option-link:focus {
-  background-color: #17573d;
-}
 
 .order-comment {
   position: relative;
@@ -1786,7 +1778,7 @@ body {
 .order-comment__comment-area {
   resize: none;
   padding: 20px;
-  font-size: 16px;
+  font-size: px;
   background-color: #01383a;
   color: #ffffff;
   border: 1px solid #86e543;
@@ -1798,7 +1790,6 @@ body {
     width: 590px;
     min-height: 255px;
     padding: 24px;
-    font-size: 18px;
   }
 }
 @media screen and (min-width: 1280px) {

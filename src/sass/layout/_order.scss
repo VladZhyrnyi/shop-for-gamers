@@ -364,16 +364,6 @@
   &:first-child {
     padding-top: 4px;
   }
-
-  &:hover,
-  &:focus {
-    background-color: #17573d;
-  }
-}
-
-.order__option-link:hover,
-.order__option-link:focus {
-  background-color: #17573d;
 }
 
 .order-comment {
@@ -405,7 +395,6 @@
     width: 590px;
     min-height: 255px;
     padding: 24px;
-    font-size: 18px;
   }
   @include desktop {
     height: 100%;

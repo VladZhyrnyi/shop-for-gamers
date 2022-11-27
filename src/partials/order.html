@@ -517,19 +517,26 @@
             </div>
 
             <div class="order__form-field">
-              <details class="order__details">
+              <!-- <label class="order__form-label" for="order__color"
+1qwEfgh jk tr1  qSdfg ≥nbvcx            > -->
+              <details class="order__form-field--color">
                 <summary class="order__summary">Color Option</summary>
-                <ul class="order__select">
-                  <li class="order__option">
-                    <a class="order__option-link">K9D Black Orange</a>
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">K9D Silver Gray</a>
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">9U White Blue</a>
-                  </li>
-                </ul>
+                <select
+                  class="order__select"
+                  id="order__color"
+                  name="order__color"
+                  size="3"
+                >
+                  <option class="order__option" value="k9d-black-orange">
+                    K9D Black Orange
+                  </option>
+                  <option class="order__option" value="k9d-silver-gray">
+                    K9D Silver Gray
+                  </option>
+                  <option class="order__option" value="k9u-white-blue">
+                    K9U White Blue
+                  </option>
+                </select>
               </details>
             </div>
 
@@ -538,26 +545,9 @@
                 Quantity
                 <input type="number" name="order__quantity" min="0" />
               </label> -->
-              <details class="order__details">
+              <details class="order__form-field--quantity">
                 <summary class="order__summary">Quantity</summary>
-                <ul class="order__select">
-                  <li class="order__option">
-                    <a class="order__option-link">1</a>
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">2</a>
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">3</a>K
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">4</a>K
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">5</a>K
-                  </li>
-                </ul>
-                <!-- <select
+                <select
                   class="order__select"
                   id="order__quantity"
                   name="order__quantity"
@@ -568,25 +558,14 @@
                   <option class="order__option" value="3">3</option>
                   <option class="order__option" value="4">4</option>
                   <option class="order__option" value="5">5</option>
-                </select> -->
+                </select>
               </details>
             </div>
 
             <div class="order__form-field">
-              <details class="order__details">
+              <details class="order__form-field--payment">
                 <summary class="order__summary">Payment</summary>
-                <ul class="order__select">
-                  <li class="order__option">
-                    <a class="order__option-link">Privat24</a>
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">Monobank</a>
-                  </li>
-                  <li class="order__option">
-                    <a class="order__option-link">PayPal</a>K
-                  </li>
-                </ul>
-                <!-- <select
+                <select
                   class="order__select"
                   id="order__payment"
                   name="order__payment"
@@ -599,7 +578,7 @@
                     Monobank
                   </option>
                   <option class="order__option" value="paypal">PayPal</option>
-                </select> -->
+                </select>
               </details>
             </div>
           </div>
@@ -619,18 +598,10 @@
         </div>
 
         <div class="order__buttons">
-          <button
-            class="order__button order__btn-primary js-open-modal"
-            data-modal="take-order1"
-            type="submit"
-          >
+          <button class="order__button order__btn-primary" type="submit">
             Buy it now
           </button>
-          <button
-            class="order__button order__btn-secondary js-open-modal"
-            data-modal="take-order2"
-            type="submit"
-          >
+          <button class="order__button order__btn-secondary" type="submit">
             Add to cart
           </button>
         </div>
