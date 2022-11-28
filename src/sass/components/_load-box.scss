@@ -1,0 +1,45 @@
+@keyframes pulseWidth {
+    0% {
+        width: 16px;
+    }
+
+    50% {
+        width: 16px;
+    }
+
+    75% {
+        width: 40px;
+    }
+
+    100% {
+        width: 16px;
+    }
+}
+
+.load-box {
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 0;
+    @include flex-position;
+    gap: 16px;
+}
+
+.load-box__bullet {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+
+    animation-name: pulseWidth;
+    animation-duration: 2400ms;
+    animation-iteration-count: infinite;
+
+    &--second {
+        animation-delay: 600ms;
+    }
+
+    &--third {
+        animation-delay: 1200ms;
+    }
+}
